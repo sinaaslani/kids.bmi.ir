@@ -9,7 +9,7 @@ namespace Site.Kids.bmi.ir
     {
         private enum XMLType
         {
-            Profile_BankStory = 1,
+            Profile_BankStory = 1,22
         }
 
         protected void Page_Load(object sender, EventArgs e)
