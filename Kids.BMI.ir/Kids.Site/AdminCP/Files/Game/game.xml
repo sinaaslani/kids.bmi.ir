@@ -1,0 +1,304 @@
+<levels>
+
+	<!-- level_time in millisecond -->
+	<!-- event_of_end_of_level: 'show_dialog_box', 'show_name_of_next_level', 'show_dialog_box_win' -->
+	
+	<level level_name="level 1" 
+		   level_number = "1"
+		   
+		   offset_speed="0"
+		   
+		   target_score="3000"
+		   
+		   level_time="30000" 
+		   weapon_amount="70"
+		   
+		   maximum_bonuses="1"
+		   
+		   maximum_far_background_items="3"
+		   minimum_distance_between_far_background_items="130"
+
+		   maximum_near_background_items="2"
+		   minimum_distance_between_near_background_items="130"
+
+		   maximum_background_layer_1_items="10"
+		   minimum_distance_between_background_layer_1_items="200"
+
+		   maximum_background_layer_2_items="10"
+		   minimum_distance_between_background_layer_2_items="0"
+
+		   maximum_background_layer_3_items="10"
+		   minimum_distance_between_background_layer_3_items="0"
+
+		   maximum_background_layer_4_items="10"
+		   minimum_distance_between_background_layer_4_items="200"
+
+		   maximum_background_layer_5_items="10"
+		   minimum_distance_between_background_layer_5_items="0"
+
+		   maximum_ground_items="2"
+		   minimum_distance_between_ground_items="200"
+
+		   maximum_foreground_items="2"
+		   minimum_distance_between_foreground_items="130"
+
+		   maximum_up_foreground_items="2"
+		   minimum_distance_between_up_foreground_items="130"
+
+		   maximum_neutral_items="20"
+		   minimum_distance_between_neutral_items="350"
+
+		   maximum_active_items="10"
+		   minimum_distance_between_active_items="300"
+
+		   maximum_flying_items="100"
+		   minimum_distance_between_flying_items="30"
+		   minimum_time_between_flying_items="10000"
+		   
+		   event_of_end_of_level="show_name_of_next_level">
+
+		<far_background_items>
+		</far_background_items>
+
+		<near_background_items>
+		</near_background_items>
+
+		<background_layer_1_items>
+			<!--
+			<background_layer_1_item item_type="background_layer_1_item" item_id="l1_tree_1" item_movie_clip="l1_tree_1_mc" />
+			<background_layer_1_item item_type="background_layer_1_item" item_id="l1_tree_3" item_movie_clip="l1_tree_3_mc" />
+			-->
+		</background_layer_1_items>
+
+		<background_layer_2_items>
+			<!--
+			<background_layer_1_item item_type="background_layer_1_item" item_id="l2_tree_1" item_movie_clip="l2_tree_1_mc" />
+			<background_layer_1_item item_type="background_layer_1_item" item_id="l2_tree_2" item_movie_clip="l2_tree_2_mc" />
+			<background_layer_1_item item_type="background_layer_1_item" item_id="l2_tree_3" item_movie_clip="l2_tree_3_mc" />
+			-->
+			
+		</background_layer_2_items>
+
+		<background_layer_3_items>
+			<background_layer_3_item item_type="background_layer_3_item" item_id="l3_hill_1" item_movie_clip="l3_hill_1_mc" />
+			<background_layer_3_item item_type="background_layer_3_item" item_id="l3_hill_2" item_movie_clip="l3_hill_2_mc" />
+			<background_layer_3_item item_type="background_layer_3_item" item_id="l3_hill_3" item_movie_clip="l3_hill_3_mc" />
+		</background_layer_3_items>
+
+		<background_layer_4_items>
+			<background_layer_4_item item_type="background_layer_4_item" item_id="l4_hill_1" item_movie_clip="l4_hill_1_mc" />
+			<background_layer_4_item item_type="background_layer_4_item" item_id="l4_hill_2" item_movie_clip="l4_hill_2_mc" />
+		</background_layer_4_items>
+		
+		<background_layer_5_items>
+
+			<background_layer_5_item item_type="background_layer_5_item" item_id="l5_hill_1" item_movie_clip="l5_hill_1_mc" />
+			<background_layer_5_item item_type="background_layer_5_item" item_id="l5_hill_2" item_movie_clip="l5_hill_2_mc" />
+			<background_layer_5_item item_type="background_layer_5_item" item_id="l5_hill_3" item_movie_clip="l5_hill_3_mc" />
+			<background_layer_5_item item_type="background_layer_5_item" item_id="l5_hill_4" item_movie_clip="l5_hill_4_mc" />
+			<!--
+			<background_layer_5_item item_type="background_layer_5_item" item_id="l5_hill_5" item_movie_clip="l5_hill_5_mc" />
+			-->
+
+		</background_layer_5_items>
+
+		<ground_items>
+		</ground_items>
+
+		<foreground_items>
+		</foreground_items>
+
+		<up_foreground_items>
+		</up_foreground_items>
+		
+		<neutral_items>
+		</neutral_items>
+		
+		
+		<active_items>
+		
+			<!-- item_type: positive_character, negative_character, unknown_character, positive_object, negative_object, unknown_object, dropped_object -->
+			
+			<!-- bee from front -->
+			<active_item item_type="flying_item" 
+						 item_id="ac_bee_1" 
+						 item_movie_clip="ac_bee_1_mc" 
+						 
+						 repeat_weight="1" 
+						 quantity_in_one_cycle="1" 
+						 maximum_in_level="-1" 
+						 
+						 activation_distance="230" 
+						 lion_reaction="null" 
+						 reactions="move#none"
+						 reactive_flag="false"
+						 reactive_default_state="null"
+						 
+						 group_item_flag="false"
+						 minimum_items_in_one_group="null" 
+						 maximum_items_in_one_group="null" 
+						 group_width="null"
+						 
+						 adding_type="normal"
+						 flying_item_flag="true"
+						 linked_items=""
+						 scenario_flag="false"
+						 scenario_final_step="null"  /> 
+			
+			<!-- bee from back -->
+			<active_item item_type="flying_item" 
+						 item_id="ac_bee_2" 
+						 item_movie_clip="ac_bee_2_mc" 
+						 
+						 repeat_weight="1" 
+						 quantity_in_one_cycle="1" 
+						 maximum_in_level="-1" 
+						 
+						 activation_distance="230" 
+						 lion_reaction="null" 
+						 reactions="move#none"
+						 reactive_flag="false"
+						 reactive_default_state="null"
+						 
+						 group_item_flag="false"
+						 minimum_items_in_one_group="null" 
+						 maximum_items_in_one_group="null" 
+						 group_width="null"
+						 
+						 adding_type="normal"
+						 flying_item_flag="true"
+						 linked_items=""
+						 scenario_flag="false"
+						 scenario_final_step="null"  /> 			
+			
+			<active_item item_type="negative_object" 
+						 item_id="ac_python_1" 
+						 item_movie_clip="ac_python_1_mc" 
+						 
+						 repeat_weight="1" 
+						 quantity_in_one_cycle="1" 
+						 maximum_in_level="-1" 
+						 
+						 activation_distance="230" 
+						 lion_reaction="null" 
+						 reactions="move#none"
+						 reactive_flag="false"
+						 reactive_default_state="null"
+						 
+						 group_item_flag="false"
+						 minimum_items_in_one_group="null" 
+						 maximum_items_in_one_group="null" 
+						 group_width="null"
+						 
+						 adding_type="normal"
+						 flying_item_flag="false"
+						 linked_items=""
+						 scenario_flag="false"
+						 scenario_final_step="null"  /> 						 
+
+				<!-- white -->
+				<active_item item_type="positive_object" 
+							 item_id="ac_yoghurt_2" 
+							 item_movie_clip="ac_yoghurt_2_mc" 
+							 
+							 repeat_weight="1" 
+							 quantity_in_one_cycle="4" 
+							 maximum_in_level="-1" 
+							 
+							 activation_distance="30" 
+							 lion_reaction="none" 
+							 reactions="move#none"
+							 reactive_flag="false"
+							 reactive_default_state="null" 
+							 
+							 group_item_flag="false"
+							 minimum_items_in_one_group="3" 
+							 maximum_items_in_one_group="3" 
+							 group_width="100"
+							 
+							 adding_type="normal"
+							 flying_item_flag="false"
+							 linked_items="" 
+							 scenario_flag="false"
+							 scenario_final_step="null"  /> 
+
+				<active_item item_type="negative_object" 
+							 item_id="ac_stone_1" 
+							 item_movie_clip="ac_stone_1_mc" 
+							 
+							 repeat_weight="1" 
+							 quantity_in_one_cycle="5" 
+							 maximum_in_level="-1" 
+							 
+							 activation_distance="30" 
+							 lion_reaction="none" 
+							 reactions="move#none"
+							 reactive_flag="false"
+							 reactive_default_state="null" 
+							 
+							 group_item_flag="false"
+							 minimum_items_in_one_group="3" 
+							 maximum_items_in_one_group="3" 
+							 group_width="100"
+							 
+							 adding_type="normal"
+							 flying_item_flag="false"
+							 linked_items="" 
+							 scenario_flag="false"
+							 scenario_final_step="null"  /> 
+
+				<active_item item_type="negative_object" 
+							 item_id="ac_stone_2" 
+							 item_movie_clip="ac_stone_2_mc" 
+							 
+							 repeat_weight="1" 
+							 quantity_in_one_cycle="5" 
+							 maximum_in_level="-1" 
+							 
+							 activation_distance="30" 
+							 lion_reaction="none" 
+							 reactions="move#none"
+							 reactive_flag="false"
+							 reactive_default_state="null" 
+							 
+							 group_item_flag="false"
+							 minimum_items_in_one_group="3" 
+							 maximum_items_in_one_group="3" 
+							 group_width="100"
+							 
+							 adding_type="normal"
+							 flying_item_flag="false"
+							 linked_items="" 
+							 scenario_flag="false"
+							 scenario_final_step="null"  /> 
+				
+				<active_item item_type="negative_object" 
+							 item_id="ac_stone_3" 
+							 item_movie_clip="ac_stone_3_mc" 
+							 
+							 repeat_weight="1" 
+							 quantity_in_one_cycle="5" 
+							 maximum_in_level="-1" 
+							 
+							 activation_distance="30" 
+							 lion_reaction="none" 
+							 reactions="move#none"
+							 reactive_flag="false"
+							 reactive_default_state="null" 
+							 
+							 group_item_flag="false"
+							 minimum_items_in_one_group="3" 
+							 maximum_items_in_one_group="3" 
+							 group_width="100"
+							 
+							 adding_type="normal"
+							 flying_item_flag="false"
+							 linked_items="" 
+							 scenario_flag="false"
+							 scenario_final_step="null"  /> 				
+
+		</active_items>
+		
+	</level>
+
+</levels>

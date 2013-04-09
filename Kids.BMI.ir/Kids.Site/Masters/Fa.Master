@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="True" CodeBehind="Fa.Master.cs" Inherits="Site.Kids.bmi.ir.Masters.Fa" %>
+
+
+<%@ Register TagPrefix="uc1" TagName="ucMenuSide" Src="~/Masters/ucMenuSide.ascx" %>
+<%@ Register TagName="TopMenu" Src="~/Masters/TopMenu.ascx" TagPrefix="uc3" %>
+<%@ Register Src="ucHomeTopLogo.ascx" TagName="ucHomeTopLogo" TagPrefix="uc4" %>
+<%@ Register Src="~/InfoBox/ucNewsMarque.ascx" TagName="ucNewsMarque" TagPrefix="uc5" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+</head>
+<head>
+    <title>بانک ملی ایران - سایت کودک </title>
+    <%=RSSLinks %>
+    <link rel="SHORTCUT ICON" href="<%=ResolveUrl("~/App_Themes/Default/images/Web/bmi.ico") %>" />
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/AC_RunActiveContent.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/jquery-1.8.1.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/scripts/jquery.msg.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/scripts/jquery.center.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/scripts/msgbox.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/jquery.powertip.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/jquery.powertip-1.1.0.min.js") %>"></script>
+    <script type="text/javascript" src="<%=ResolveUrl("~/Scripts/jquery.prettyPhoto.js") %>" charset="utf-8"></script>
+
+    <meta name="author" content="بانک  ملی ایران" />
+    <meta name="keywords" content=" کانون جوانه های بانک ملی ایران " />
+    <meta name="description" content="سایت آموزش بانکداری کودکان بانک ملی ایران" />
+    <meta name="description" content="حساب آرزو بانک ملی ایران" />
+    <meta name="description" content="تسهیلات حساب آرزو بانک ملی ایران" />
+    <meta name="description" content="بازی و سرگرمی بانک ملی ایران" />
+</head>
+<body style="margin: 0; padding: 0; height: 900px; background-image: url('<%=MasterBackGroundImageUrl%>');
+    background-position: center; background-repeat: no-repeat; background-size: 1287px"
+    dir="ltr">
+    <form id="form1" runat="server" enctype="multipart/form-data" method="post">
+    <asp:ScriptManager ID="ScriptManager1" runat="server" EnablePartialRendering="true">
+    </asp:ScriptManager>
+    
+    <script language="javascript" type="text/javascript">
+        var _DEBUG = '<%=_DEBUG%>';
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(onEndRequest);
+
+        function onEndRequest(sender, args) {
+
+            var error = args.get_error();
+
+            if (error != null) {
+                args.set_errorHandled(true);
+                var msg = error.message.replace("Sys.WebForms.PageRequestManagerServerErrorException: ", "");
+                ShowJQMessageBox(msg);
+
+            }
+
+        }
+    </script>
+    <br />
+    <table width="100%" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+            <td style="width: 100%;" align="center">
+                <table width="1002px" border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                        <td style="width: 748px; height: 170px">
+                            <uc4:ucHomeTopLogo ID="ucHomeTopLogo1" runat="server" />
+                        </td>
+                        <td style="width: 254px; height: 170px; background-image: url(/App_Themes/Default/Master/Koodak_01.png);
+                            background-repeat: no-repeat;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 748px; height: 114px; background-image: url(/App_Themes/Default/Master/Koodak_03.png);
+                            background-repeat: no-repeat;" valign="top" align="center">
+                            <uc3:TopMenu ID="TopMenu1" runat="server" />
+                        </td>
+                        <td style="width: 254px; height: 114px; background-image: url(/App_Themes/Default/Master/Koodak_02.png);
+                            background-repeat: no-repeat;">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1002px; background-image: url(/App_Themes/Default/Master/Koodak_04.png);
+                            background-repeat: repeat-y;" colspan="2">
+                            <table style="width: 1002px; height: 100%;" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td style="width: 748px;" dir="rtl" valign="top" align="right">
+                                        <uc5:ucNewsMarque ID="ucNewsMarque" runat="server" />
+                                        <td style="width: 254px; padding-right: 20px;" runat="server" id="RightPanel" valign="top"
+                                            align="right" rowspan="2">
+                                            <table cellpadding="0" cellspacing="0" border="0px" style="width: 96%;">
+                                                <tr>
+                                                    <td runat="server" id="TopRightPanelPlaceHolder">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td align="right" valign="top">
+                                                        <uc1:ucMenuSide ID="ucMenuSide1" runat="server" />
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                </tr>
+                                <tr>
+                                    <td style="width: 747px; padding-left: 25px;" dir="rtl" valign="top" align="center">
+                                        <div style="width: 680px; height: 490px; overflow: auto; padding-right: 25px;padding-left:15px; text-align: center;"
+                                            align="center">
+                                            <asp:UpdatePanel ID="UpdatepnlMain" runat="server">
+                                                <ContentTemplate>
+                                                    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                                                    </asp:ContentPlaceHolder>
+                                                </ContentTemplate>
+                                            </asp:UpdatePanel>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 1002px; height: 42px; background-image: url(/App_Themes/Default/Master/Koodak_05.png);
+                            background-repeat: no-repeat; padding-top: 5px;" colspan="2" align="right" valign="top">
+                            <table width="100%" style="color: #ffffff;">
+                                <tr>
+                                    <td align="left">
+                                        &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;Copyright © 2013 bmi, Inc. All rights reserved.
+                                    </td>
+                                    <td align="right" dir="rtl">
+                                        تمامی حقوق این سايت متعلق به بانک ملی ایران می باشد.
+                                    </td>
+                                    <td valign="top" align="right" style="padding-right: 20px;">
+                                        <a href="/RSSFeed.aspx">
+                                            <img alt="Rss 2.0" src="/App_Themes/Default/images/rss-footer.png" border="0px" align="AbsMiddle" /></a>&nbsp;
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <asp:UpdateProgress ID="UpdateProgress1" runat="server">
+        <ProgressTemplate>
+            <div style="background-color: #000000; bottom: 0; height: <%= BlackAreaHight+"px"%>;
+                left: 0; margin: 0; opacity: 0.6; overflow-x: hidden; overflow-y: hidden !important;
+                padding: 0; position: absolute; left: 0px; top: 0px; width: 3000px; z-index: 1000;
+                filter: alpha(opacity = 60);">
+            </div>
+            <div id="processMessage" style="bottom: 50%; left: 40%; padding: 10px; width: 14%;
+                z-index: 1001; background-color: #CF4342; direction: rtl; vertical-align: middle;
+                text-align: center; color: White; position: <%=Position%>;">
+                <asp:Image ID="Image1" ImageUrl="~/App_Themes/ajax-loader.gif" runat="server" Style="vertical-align: middle;
+                    margin: 2px;" />
+                لطفا منتظر بمانید ...
+            </div>
+        </ProgressTemplate>
+    </asp:UpdateProgress>
+    </form>
+</body>
+</html>

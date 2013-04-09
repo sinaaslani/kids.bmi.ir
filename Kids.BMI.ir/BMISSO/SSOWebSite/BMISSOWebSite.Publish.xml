@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="\\192.168.53.15\Publish\SSOPublish\SSOWebSite" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Redirect.aspx" publishTime="12/07/2011 17:00:19" />
+    <file relUrl="App_Themes/Fa/images/bulet-m.png" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/SiteIcon/bmiLogo_Small.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bodybg-left.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="skins/LoginCommentDefault.ascx" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bullet_icon2.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/email.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/ray_giri.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="skins/LoginCommentEmployee.ascx" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/Fa.css" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/background-footer.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="bin/Microsoft.Web.Services3.dll" publishTime="06/07/2010 16:32:46" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/pardakht-ghoboz.jpg" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="bin/SSOWebSite.pdb" publishTime="12/11/2011 16:40:21" />
+    <file relUrl="bin/BMISSOClientHelper.dll" publishTime="12/11/2011 16:40:21" />
+    <file relUrl="App_Themes/Fa/images/bodybg.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/tashilat.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="bin/Anthem.dll" publishTime="12/08/2011 14:24:01" />
+    <file relUrl="App_Themes/Fa/images/blankImg.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/SiteIcon/bmiLogo.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/button.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/SiteIcon/BMI.ico" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/background-footer.png" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/arrow.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bullet.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Default/indicator_medium.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/Mohasebe.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bg.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Default/main.css" publishTime="12/07/2011 16:20:29" />
+    <file relUrl="App_Themes/Fa/images/BannerFA.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="scripts/AC_RunActiveContent.js" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/khadamat-inteneti.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/BulletLink.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="Util.js" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Default/top_pic.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="skins/HeaderFA.ascx" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bulet-m.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Default/BULLET.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/btn-back.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="skins/FooterFA.ascx" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bannerFAline.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/buttonhover.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="app.config" publishTime="06/07/2010 16:32:38" />
+    <file relUrl="Default.aspx" publishTime="12/07/2011 16:58:13" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/System-Saba.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bodybg-right.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/email.png" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/break.gif" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="bin/BMISSOClientHelper.pdb" publishTime="12/11/2011 16:40:21" />
+    <file relUrl="App_Themes/Fa/images/bmi.swf" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/UserControlImage/search-back.jpg" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="App_Themes/Fa/images/bank-melli-iran.jpg" publishTime="06/07/2010 16:32:39" />
+    <file relUrl="bin/SSOWebSite.dll" publishTime="12/11/2011 16:40:21" />
+    <file relUrl="Web.config" publishTime="12/08/2011 13:49:49" />
+  </publishProfile>
+</publishData>

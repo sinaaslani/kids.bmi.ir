@@ -1,0 +1,343 @@
+a.LinkCadetBlue
+{
+	color: #3663A8;
+	text-decoration: none;
+	font-size: 9pt;
+	font-family: Tahoma;
+	line-height: 1.5;
+}
+a.LinkCadetBlue:Hover
+{
+	color: #FF3300;
+	font-size: 9pt;
+}
+
+a.LinkTitleNews
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: navy;
+	text-decoration: none;
+	line-height: 1.5;
+}
+
+a.LinkTitleNews:hover
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: #89220A;
+	text-decoration: none;
+	line-height: 1.5;
+}
+
+a.LinkRedTitle
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: #B72121;
+	text-decoration: none;
+}
+
+a.LinkRedTitle:hover
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: #D26900;
+	text-decoration: none;
+}
+
+a.LinkBlackSmall
+{
+	font-family: tahoma;
+	font-size: 8pt;
+	color: #000000;
+	text-decoration: none;
+}
+a.LinkBlackSmall:hover
+{
+	font-family: tahoma;
+	font-size: 8pt;
+	color: #B72121;
+	text-decoration: none;
+}
+
+a.TableHeaderLink
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a.TableCellLink:Hover
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: #89220A;
+	text-decoration: none;
+}
+
+a.TableCellLink
+{
+	font-family: tahoma;
+	font-size: 9pt;
+	color: black;
+	text-decoration: none;
+}
+.Tableheader
+{
+	font-size: 12px;
+	font-family: Tahoma;
+	cursor: default;
+	font-weight: bold;
+}
+
+
+BODY
+{
+	font-family: Tahoma;
+	font-size: 12px;
+	margin: 0px;
+	text-transform: capitalize;
+	line-height: 1.5;
+}
+
+TABLE
+{
+	font-size: 11px;
+	text-transform: capitalize;
+	font-family: Tahoma;
+}
+TD
+{
+	font-size: 11px;
+	text-transform: capitalize;
+	font-family: Tahoma;
+}
+TR
+{
+	font-size: 11px;
+	text-transform: capitalize;
+	font-family: Tahoma;
+}
+INPUT
+{
+	font-size: 12px;
+	font-family: Tahoma;
+}
+
+Select
+{
+	font-size: 12px;
+	font-family: Tahoma;
+}
+FIELDSET
+{
+	border-right: #DDDDDD 1px solid;
+	padding-right: 5px;
+	border-top: #DDDDDD 1px solid;
+	padding-left: 5px;
+	padding-bottom: 5px;
+	border-left: #DDDDDD 1px solid;
+	width: 98%;
+	padding-top: 5px;
+	border-bottom: #DDDDDD 1px solid;
+	text-align: center;
+}
+LEGEND
+{
+	font-weight: normal;
+	font-size: 13px;
+	color: #002375;
+	font-family: Tahoma;
+}
+
+.Row-Footer
+{
+	color: White;
+	font-family: Tahoma;
+	font-size: 7pt;
+}
+
+
+.SearchTextbox
+{
+	border-right: #31458f 0px solid;
+	border-top: #31458f 0px solid;
+	font-size: 12px;
+	background-image: url(/App_Themes/Fa/images/Menu/textbox.jpg);
+	border-left: #31458f 0px solid;
+	border-bottom: #31458f 0px solid;
+	font-family: Tahoma;
+}
+.Textbox
+{
+	border-right: #31458f 1px solid;
+	border-top: #31458f 1px solid;
+	font-size: 12px;
+	background-image: url(/App_Themes/Fa/images/Menu/textbox.jpg);
+	border-left: #31458f 1px solid;
+	border-bottom: #31458f 1px solid;
+	font-family: Tahoma;
+	direction: rtl;
+}
+.TextboxBig
+{
+	font-size: 11px;
+	background-image: url(/App_Themes/Fa/Images/textbackbig.jpg);
+	border: #31458f 1px solid;
+	width: 400px;
+	background-repeat: repeat-x;
+	font-family: Tahoma;
+	height: 55px;
+	text-transform: capitalize;
+}
+.Combobox
+{
+	border-top-width: 0px;
+	padding-right: 1px;
+	padding-left: 1px;
+	border-left-width: 0px;
+	background: #f0f0f0 no-repeat -1250px 100%;
+	border-bottom-width: 0px;
+	padding-bottom: 1px;
+	padding-top: 1px;
+	border-right-width: 0px;
+	direction: rtl;
+}
+
+
+.fvheader
+{
+	background-image: url(/LearningManagmentSystem_WebUi/APP_Temes/images/header.jpg);
+}
+
+.button
+{
+	border-right: #ebf1ff 0px solid;
+	border-left: #ebf1ff 0px solid;
+	border-top: #ebf1ff 0px solid;
+	border-bottom: #ebf1ff 0px solid;
+	font-size: 12px;
+	background-image: url(/App_Themes/Fa/images/Menu/searchbuttonnormal.gif);
+	cursor: pointer;
+	color: white;
+	font-family: Tahoma;
+	letter-spacing: 0px;
+	background-color: #000000;
+}
+.RedButton
+{
+	border-right: #ebf1ff 0px solid;
+	border-left: #ebf1ff 0px solid;
+	border-top: #ebf1ff 0px solid;
+	border-bottom: #ebf1ff 0px solid;
+	font-size: 12px;
+	background-image: url(/App_Themes/Fa/images/buttonnormal.gif);
+	cursor: pointer;
+	color: white;
+	font-family: Tahoma;
+	letter-spacing: 0px;
+	background-color: #000000;
+}
+
+.buttonhover
+{
+	border-right: #ebf1ff 0px solid;
+	border-top: #ebf1ff 0px solid;
+	font-size: 12px;
+	background-image: url(/App_Themes/Fa/images/Menu/searchbutton.gif);
+	border-left: #ebf1ff 0px solid;
+	cursor: pointer;
+	color: white;
+	border-bottom: #ebf1ff 0px solid;
+	font-family: Tahoma;
+	letter-spacing: 0px;
+	background-color: #000000;
+}
+
+.RedTitleSmall
+{
+	font-size: 9pt;
+	font-family: Tahoma,Verdana,Times New Roman, Arial;
+	color: #B00A60;
+	line-height: 1.5;
+}
+.RedTitleSmaller
+{
+	font-size: 8pt;
+	font-family: Tahoma,Verdana,Times New Roman, Arial;
+	color: #B00A60;
+	line-height: 1.5;
+}
+
+.normalTextSmall
+{
+	line-height: 1.5;
+	font-size: 9pt;
+	font-family: Tahoma;
+}
+.normalTextSmaller
+{
+	line-height: 1.5;
+	font-size: 8pt;
+	font-family: Tahoma;
+}
+
+font
+{
+	line-height: 1.5;
+	font-size: 9pt;
+	font-family: Tahoma;
+}
+.tableBorder
+{
+	border-right: #dddddd 1px solid;
+	border-top: #dddddd 1px solid;
+	border-left: #dddddd 1px solid;
+	border-bottom: #dddddd 1px solid;
+	background-color: white;
+}
+.tableHeaderText2
+{
+	font-weight: normal;
+	font-size: 8pt;
+	color: white;
+	font-family: Tahoma;
+	background-color: #0e92b3;
+}
+
+A.siteNavigation:link
+{
+	font-size: 8pt;
+	color: white;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+A.siteNavigation:visited
+{
+	font-size: 8pt;
+	color: white;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+A.siteNavigation:hover
+{
+	font-size: 8pt;
+	color: White;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+
+.MenuItemRight
+{
+	font-size: 8pt;
+	color: white;
+	font-family: Tahoma;
+	text-decoration: none;
+}
+.RightMenuCell
+{
+	height:23px;
+}

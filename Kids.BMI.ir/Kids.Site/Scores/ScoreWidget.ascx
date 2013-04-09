@@ -1,0 +1,2 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ScoreWidget.ascx.cs" Inherits="Site.Kids.bmi.ir.Scores.ScoreWidget" %>
+<asp:Label ID="lblCurrentScore" runat="server" Visible="False"></asp:Label>

@@ -1,0 +1,1321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5D2B9DB1-9C3F-4F6D-9B76-5F09D62C7683}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Site.Kids.bmi.ir</RootNamespace>
+    <AssemblyName>Site.Kids.bmi.ir</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.7.123, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>True</SpecificVersion>
+      <HintPath>..\Kids.Utility\Ref\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EPPlus">
+      <HintPath>..\Kids.Utility\Ref\EPPlus.dll</HintPath>
+    </Reference>
+    <Reference Include="FreeTextBox, Version=3.2.4.41247, Culture=neutral, PublicKeyToken=5962a4e684a48b87, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Kids.Utility\Ref\FreeTextBox.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminCP\BankExamAdmin\AddEditBankExam.aspx" />
+    <Content Include="AdminCP\BankExamAdmin\AddEditBankExamQuestion.aspx" />
+    <Content Include="AdminCP\BankExamAdmin\BankExamQuestionList.aspx" />
+    <Content Include="AdminCP\BankExamAdmin\BankExamList.aspx" />
+    <Content Include="AdminCP\Files\KidsUser\Temp\1.txt" />
+    <Content Include="AdminCP\HomeWidget\PostalCardAdminPanel.ascx" />
+    <Content Include="AdminCP\KidsUserAdmin\GeustUser_Admin.aspx" />
+    <Content Include="AdminCP\PostalCardAdmin\PostalCardAdmin.aspx" />
+    <Content Include="AdminCP\PostalCardAdmin\PostalCardList.aspx" />
+    <Content Include="AdminCP\Default.aspx" />
+    <Content Include="AdminCP\DynamicPages\DynamicPages_Admin.aspx" />
+    <Content Include="AdminCP\HomeWidget\BankExamAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\WishesAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\ucScoreTypeAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\SystemUserAdminPanel.ascx" />
+    <Content Include="AdminCP\KidsUserAdmin\KidsUser_Admin_Branch.aspx" />
+    <Content Include="AdminCP\ScoreAdmin\ScoreTypeAdmin.aspx" />
+    <Content Include="AdminCP\ScoreAdmin\ScoreTypeList.aspx" />
+    <Content Include="AdminCP\ScoreAdmin\ScoreTypeCeategoryAdmin.aspx" />
+    <Content Include="AdminCP\ScoreAdmin\ScoreTypeCategoryList.aspx" />
+    <Content Include="AdminCP\SystemUserAdmin\AddEditRoles.aspx" />
+    <Content Include="AdminCP\SystemUserAdmin\AddEditUser.aspx" />
+    <Content Include="AdminCP\SystemUserAdmin\AdminRoles.aspx" />
+    <Content Include="AdminCP\SystemUserAdmin\AdminUsers.aspx" />
+    <Content Include="AdminCP\Files\BirthDay\1.swf" />
+    <Content Include="AdminCP\Files\BirthDay\10.swf" />
+    <Content Include="AdminCP\Files\BirthDay\11.swf" />
+    <Content Include="AdminCP\Files\BirthDay\12.swf" />
+    <Content Include="AdminCP\Files\BirthDay\13.swf" />
+    <Content Include="AdminCP\Files\BirthDay\14.swf" />
+    <Content Include="AdminCP\Files\BirthDay\15.swf" />
+    <Content Include="AdminCP\Files\BirthDay\16.swf" />
+    <Content Include="AdminCP\Files\BirthDay\17.swf" />
+    <Content Include="AdminCP\Files\BirthDay\18.swf" />
+    <Content Include="AdminCP\Files\BirthDay\2.swf" />
+    <Content Include="AdminCP\Files\BirthDay\3.swf" />
+    <Content Include="AdminCP\Files\BirthDay\4.swf" />
+    <Content Include="AdminCP\Files\BirthDay\5.swf" />
+    <Content Include="AdminCP\Files\BirthDay\6.swf" />
+    <Content Include="AdminCP\Files\BirthDay\7.swf" />
+    <Content Include="AdminCP\Files\BirthDay\8.swf" />
+    <Content Include="AdminCP\Files\BirthDay\9.swf" />
+    <Content Include="AdminCP\HomeWidget\ConfigAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\ucFAQAdminPanel.ascx" />
+    <Content Include="AdminCP\FAQAdmin\PCategoryList.aspx" />
+    <Content Include="AdminCP\FAQAdmin\PCategoryAdmin.aspx" />
+    <Content Include="AdminCP\FAQAdmin\FAQList.aspx" />
+    <Content Include="AdminCP\FAQAdmin\FAQAdmin.aspx" />
+    <Content Include="AdminCP\ftb.imagegallery.aspx" />
+    <Content Include="AdminCP\GameAdmin\GameAdmin.aspx" />
+    <Content Include="AdminCP\GameAdmin\GameList.aspx" />
+    <Content Include="AdminCP\HomeWidget\ucGameAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\KidsUserAdminPanel.ascx" />
+    <Content Include="AdminCP\HomeWidget\ucDynamicPageAdminPanel.ascx" />
+    <Content Include="AdminCP\KidsUserAdmin\KidsUser_Admin.aspx" />
+    <Content Include="AdminCP\NewsAdmin\NewsAdmin.aspx" />
+    <Content Include="AdminCP\NewsAdmin\NewsCatAdmin.aspx" />
+    <Content Include="AdminCP\NewsAdmin\NewsCatList.aspx" />
+    <Content Include="AdminCP\NewsAdmin\NewsList.aspx" />
+    <Content Include="AdminCP\HomeWidget\ucNewsAdminPanel.ascx" />
+    <Content Include="AdminCP\PollsAdmin\AddEditPoll.aspx" />
+    <Content Include="AdminCP\PollsAdmin\AddEditPollItem.aspx" />
+    <Content Include="AdminCP\PollsAdmin\PollItemsList.aspx" />
+    <Content Include="AdminCP\PollsAdmin\PollList.aspx" />
+    <Content Include="AdminCP\HomeWidget\pollsAdminPanel.ascx" />
+    <Content Include="AdminCP\Logging\ViewLogs.aspx" />
+    <Content Include="AdminCP\WishesAdmin\WishesAdmin_Admin.aspx" />
+    <Content Include="AdminCP\_Config\ConfigsAdmin.aspx" />
+    <Content Include="App_Themes\Admin\Images\admin_bullet.gif" />
+    <Content Include="App_Themes\Admin\Images\blankImg.gif" />
+    <Content Include="App_Themes\Admin\Images\page_Bkg.jpg" />
+    <Content Include="App_Themes\Admin\jquery.msg.css" />
+    <Content Include="App_Themes\Admin\jquery.powertip.css" />
+    <Content Include="App_Themes\Admin\ftb.css" />
+    <Content Include="App_Themes\Default\dg.css" />
+    <Content Include="App_Themes\Default\images\BirthDay\cake.png" />
+    <Content Include="App_Themes\Default\images\BirthDay\ballon.png" />
+    <Content Include="App_Themes\Default\images\BirthDay\favorites.png" />
+    <Content Include="App_Themes\Default\images\Bloc Note.png" />
+    <Content Include="App_Themes\Default\images\bullet.jpg" />
+    <Content Include="App_Themes\Default\images\bullet_green.png" />
+    <Content Include="App_Themes\Admin\Site.css" />
+    <Content Include="App_Themes\ajax-loader.gif" />
+    <Content Include="App_Themes\Default\images\0.jpg" />
+    <Content Include="App_Themes\Default\images\1.jpg" />
+    <Content Include="App_Themes\Default\images\Calculate.png" />
+    <Content Include="App_Themes\Default\images\chart_up.png" />
+    <Content Include="App_Themes\Default\images\DG\DgHeader.gif" />
+    <Content Include="App_Themes\Default\images\DG\DgPager.gif" />
+    <Content Include="App_Themes\Default\images\DG\header.jpg" />
+    <Content Include="App_Themes\Default\images\download.gif" />
+    <Content Include="App_Themes\Default\images\edit_profile.png" />
+    <Content Include="App_Themes\Default\images\Entry\ads.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_01.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_02.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_03.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_04.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_05.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_06.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_07.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_08.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_09.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\entry_10.jpg" />
+    <Content Include="App_Themes\Default\images\Entry\site-javane-entry.jpg" />
+    <Content Include="App_Themes\Default\images\exel.PNG" />
+    <Content Include="App_Themes\Default\images\first.png" />
+    <Content Include="App_Themes\Default\images\Game\game-comingsoon.jpg" />
+    <Content Include="App_Themes\Default\images\heart.png" />
+    <Content Include="App_Themes\Default\images\indicator_medium.gif" />
+    <Content Include="App_Themes\Default\images\KidsUserStatus\gray.png" />
+    <Content Include="App_Themes\Default\images\KidsUserStatus\Green.png" />
+    <Content Include="App_Themes\Default\images\ledgreen.gif" />
+    <Content Include="App_Themes\Default\images\ledred.gif" />
+    <Content Include="App_Themes\Default\images\ledyellow.gif" />
+    <Content Include="App_Themes\Default\images\line.gif" />
+    <Content Include="App_Themes\Default\images\Login\01.png" />
+    <Content Include="App_Themes\Default\images\Login\02.png" />
+    <Content Include="App_Themes\Default\images\Login\btn1.png" />
+    <Content Include="App_Themes\Default\images\Login\btn2.png" />
+    <Content Include="App_Themes\Default\images\Login\go.png" />
+    <Content Include="App_Themes\Default\images\Login\log-pic.gif" />
+    <Content Include="App_Themes\Default\images\Login\login-page.jpg" />
+    <Content Include="App_Themes\Default\images\Menu\menu-back.png" />
+    <Content Include="App_Themes\Default\images\Menu\menu1.png" />
+    <Content Include="App_Themes\Default\images\Menu\menu2.png" />
+    <Content Include="App_Themes\Default\images\Menu\menu3.png" />
+    <Content Include="App_Themes\Default\images\name.png" />
+    <Content Include="App_Themes\Default\images\news-bar.png" />
+    <Content Include="App_Themes\Default\images\News\news-back.png" />
+    <Content Include="App_Themes\Default\images\printer.gif" />
+    <Content Include="App_Themes\Default\images\Refresh.JPG" />
+    <Content Include="App_Themes\Default\images\rss-footer.png" />
+    <Content Include="App_Themes\Default\images\Seprator.png" />
+    <Content Include="App_Themes\Default\images\shopping_cart_accept.png" />
+    <Content Include="App_Themes\Default\images\slidshow\backgrounds\bodyBackground.jpg" />
+    <Content Include="App_Themes\Default\images\slidshow\backgrounds\checkmark.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\logo\earth-logo.jpg" />
+    <Content Include="App_Themes\Default\images\slidshow\logo\flash-logo.png" />
+    <Content Include="App_Themes\Default\images\slidshow\logo\quicktime-logo.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\loader.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\sprite.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\loader.gif" />
+    <Content Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\sprite.png" />
+    <Content Include="App_Themes\Default\images\strong.png" />
+    <Content Include="App_Themes\Default\images\UC.png" />
+    <Content Include="App_Themes\Default\images\unknown_user.jpg" />
+    <Content Include="App_Themes\Default\images\Up\up_03.png" />
+    <Content Include="App_Themes\Default\images\Up\up_06.png" />
+    <Content Include="App_Themes\Default\images\Up\up_07.png" />
+    <Content Include="App_Themes\Default\images\Up\up_08.png" />
+    <Content Include="App_Themes\Default\images\Up\up_09.png" />
+    <Content Include="App_Themes\Default\images\Up\up_10.png" />
+    <Content Include="App_Themes\Default\images\Up\up_11.png" />
+    <Content Include="App_Themes\Default\images\Web\BMI.ico" />
+    <Content Include="App_Themes\Default\images\Web\bmi.swf" />
+    <Content Include="App_Themes\Default\images\Wish\account.png" />
+    <Content Include="App_Themes\Default\images\Wish\calculator.png" />
+    <Content Include="App_Themes\Default\images\Wish\shine_22.png" />
+    <Content Include="App_Themes\Default\images\_0.jpg" />
+    <Content Include="App_Themes\Default\images\_1.jpg" />
+    <Content Include="App_Themes\Default\jquery.msg.css" />
+    <Content Include="App_Themes\Default\jquery.powertip.css" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_06.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_07.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_08.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_09.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_10.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_11.jpg" />
+    <Content Include="App_Themes\Default\Master\bmi-kids_12.jpg" />
+    <Content Include="App_Themes\Default\Master\divBackground-new.png" />
+    <Content Include="App_Themes\Default\Master\Koodak_01.png" />
+    <Content Include="App_Themes\Default\Master\Koodak_02.png" />
+    <Content Include="App_Themes\Default\Master\Koodak_03.png" />
+    <Content Include="App_Themes\Default\Master\Koodak_04.png" />
+    <Content Include="App_Themes\Default\Master\Koodak_05.png" />
+    <Content Include="App_Themes\Default\Master\MasterBG\BankStoryExamList.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\General.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\ShowNews.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\WishAccHome.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\GameHome.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\_BankStoryExam.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\NewList.jpg" />
+    <Content Include="App_Themes\Default\Master\MasterBG\GanjTunnel.jpg" />
+    <Content Include="App_Themes\Default\Master\menu-kids.swf" />
+    <Content Include="App_Themes\Default\Movie\09622-1.swf" />
+    <Content Include="App_Themes\Default\Movie\BankStory.swf" />
+    <Content Include="App_Themes\Default\Movie\Chek-1.swf" />
+    <Content Include="App_Themes\Default\Movie\child_as2.swf" />
+    <Content Include="App_Themes\Default\Movie\Hezar-1.swf" />
+    <Content Include="App_Themes\Default\Movie\Saba-1.swf" />
+    <Content Include="App_Themes\Default\Movie\Seke-1.swf" />
+    <Content Include="App_Themes\Default\Movie\Sood-1.swf" />
+    <Content Include="App_Themes\Default\prettyPhoto.css" />
+    <Content Include="App_Themes\MessageBox\Error.png" />
+    <Content Include="App_Themes\MessageBox\Information.png" />
+    <Content Include="App_Themes\MessageBox\warning.png" />
+    <Content Include="App_Themes\Default\Master\background.jpg" />
+    <Content Include="App_Themes\Default\Site.css" />
+    <Content Include="BankStory\BankStoryExam.aspx" />
+    <Content Include="BankStory\BankStoryExamList.aspx" />
+    <Content Include="BankStory\BankStoryHome.aspx" />
+    <Content Include="AdminCP\fm2.aspx" />
+    <Content Include="Contact\ContactUs.aspx" />
+    <Content Include="AdminCP\KidsUserAdmin\PrintAccForm.aspx" />
+    <Content Include="UserControls\DataListPager.ascx" />
+    <Content Include="_Festival\FestivalList.aspx" />
+    <Content Include="Scripts\jquery.prettyPhoto.js" />
+    <Content Include="WishAccount\PostalCardEmailTemplate.htm" />
+    <Content Include="WishAccount\PostalCardList.aspx" />
+    <Content Include="_FAQ\FAQList.aspx" />
+    <Content Include="InfoBox\NewsSendToMail.aspx" />
+    <Content Include="KidsGame\GameFileManager.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Masters\AdminucHomeTopLogo.ascx" />
+    <Content Include="Payment\MerchantBeforePost.aspx" />
+    <Content Include="Payment\PaymentFactorWidget.ascx" />
+    <Content Include="Payment\Payment_Commit.aspx" />
+    <Content Include="Payment\PaymentList.ascx" />
+    <Content Include="Poll\Poll.aspx" />
+    <Content Include="Registration\Editable_UserProfileWidget.ascx" />
+    <Content Include="Registration\InvitationEmailTemplate.htm" />
+    <Content Include="Registration\InviteFriend.aspx" />
+    <Content Include="Registration\KidsBirthday.aspx" />
+    <Content Include="Registration\KidsBirthDayWidget.ascx" />
+    <Content Include="Registration\LastSiteUserWidget.ascx" />
+    <Content Include="Registration\LastSiteUser.aspx" />
+    <Content Include="Registration\TodayKidsBirthDay.aspx" />
+    <Content Include="Scores\PowerKidsUser.aspx" />
+    <Content Include="Scores\PowerKidsUserWidget.ascx" />
+    <Content Include="Scores\ScoreList.ascx" />
+    <Content Include="Scripts\jquery-1.8.1.min.js" />
+    <Content Include="Scripts\jquery.powertip-1.1.0.min.js" />
+    <Content Include="Scripts\jquery.powertip.js" />
+    <Content Include="Scripts\ticker_engine.js" />
+    <Content Include="WishAccount\GanjTunelCalculator.ascx" />
+    <Content Include="WishAccount\GanjTunnel.aspx" />
+    <Content Include="WishAccount\PostalCardShow.aspx" />
+    <Content Include="WishAccount\WishAccHome.aspx" />
+    <Content Include="WishAccount\WishWidget.ascx" />
+    <Content Include="XMLProvider.aspx" />
+    <Content Include="App_Themes\Default\Master\divBackground.png" />
+    <Content Include="Default.aspx" />
+    <Content Include="DefaultKids.aspx" />
+    <Content Include="Entry.aspx" />
+    <Content Include="Error\ErrorNotFound.aspx" />
+    <Content Include="Error\ErrorServer.aspx" />
+    <Content Include="Error\NotAccess.aspx" />
+    <Content Include="JpegImage.aspx" />
+    <Content Include="KidsGame\GameHome.aspx" />
+    <Content Include="KidsGame\GameShow.aspx" />
+    <Content Include="KidsGame\ScoreService.asmx" />
+    <Content Include="Global.asax" />
+    <Content Include="Masters\TopMenu.ascx" />
+    <Content Include="App_Themes\Default\Movie\KidsIsland.swf" />
+    <Content Include="Masters\ucHomeTopLogo.ascx" />
+    <Content Include="Poll\showPoll.ascx" />
+    <Content Include="Masters\AdminTopMenu.ascx" />
+    <Content Include="Masters\ucMenuSide.ascx" />
+    <Content Include="InfoBox\NewList.aspx" />
+    <Content Include="InfoBox\PrintNews.aspx" />
+    <Content Include="Poll\showPollResults.ascx" />
+    <Content Include="Poll\ShowThnkEval.aspx" />
+    <Content Include="Poll\thnkEvalList.aspx" />
+    <Content Include="Registration\KidsUserSateWidget.ascx" />
+    <Content Include="Registration\Profile.aspx" />
+    <Content Include="Registration\Register.aspx" />
+    <Content Include="Registration\RegisterWishAccount.aspx" />
+    <Content Include="Registration\UserProfileWidget.ascx" />
+    <Content Include="RSSFeed.aspx" />
+    <Content Include="Scores\ScoreWidget.ascx" />
+    <Content Include="Scripts\AC_RunActiveContent.js" />
+    <Content Include="Scripts\jquery.center.min.js" />
+    <Content Include="Scripts\jquery.msg.js" />
+    <Content Include="Scripts\msgbox.js" />
+    <Content Include="InfoBox\ShowNews.aspx" />
+    <Content Include="DynPage\DynamicPage.aspx" />
+    <Content Include="WishAccount\AccBill.ascx" />
+    <Content Include="WishAccount\WishAccountCalculator.ascx" />
+    <Content Include="WishAccount\WishList.ascx" />
+    <Content Include="App_Themes\Default\images\Menu\Mj_Casablanca.ttf" />
+    <Content Include="App_Themes\Default\images\Menu\Mj_Two.ttf" />
+    <Content Include="_FAQ\ShowFAQ.aspx" />
+    <Content Include="AdminCP\Files\KidsAccForm\528_2.xlsx" />
+    <Content Include="App_Themes\Default\Movie\com\xvisage\.DS_Store" />
+    <Content Include="App_Themes\Default\Movie\com\xvisage\utils\StringUtils.as" />
+    <Content Include="Masters\Fa.Master" />
+    <Content Include="bin\FreeTextBox.lic" />
+    <Content Include="AdminCP\Files\GeustUser\GeustUserReport.xlsx" />
+    <Content Include="AdminCP\Files\KidsUser\KidsUserReport.xlsx" />
+    <None Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_rounded\desktop.ini" />
+    <None Include="App_Themes\Default\images\slidshow\prettyPhoto\dark_square\desktop.ini" />
+    <None Include="App_Themes\Default\images\slidshow\prettyPhoto\facebook\desktop.ini" />
+    <None Include="App_Themes\Default\images\slidshow\prettyPhoto\light_rounded\desktop.ini" />
+    <None Include="App_Themes\Default\images\slidshow\prettyPhoto\light_square\desktop.ini" />
+    <None Include="Service References\KidsScoreServiceRef\ScoreService.disco" />
+    <None Include="Service References\KidsScoreServiceRef\configuration91.svcinfo" />
+    <None Include="Service References\KidsScoreServiceRef\configuration.svcinfo" />
+    <None Include="Service References\KidsScoreServiceRef\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="UserControls\ucDatePicker.ascx" />
+    <Content Include="InfoBox\ucNewsMarque.ascx" />
+    <Content Include="Web.config" />
+    <Content Include="Web_Op.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminCP\BankExamAdmin\AddEditBankExam.aspx.cs">
+      <DependentUpon>AddEditBankExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\AddEditBankExam.aspx.designer.cs">
+      <DependentUpon>AddEditBankExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\AddEditBankExamQuestion.aspx.cs">
+      <DependentUpon>AddEditBankExamQuestion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\AddEditBankExamQuestion.aspx.designer.cs">
+      <DependentUpon>AddEditBankExamQuestion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\BankExamQuestionList.aspx.cs">
+      <DependentUpon>BankExamQuestionList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\BankExamQuestionList.aspx.designer.cs">
+      <DependentUpon>BankExamQuestionList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\BankExamList.aspx.cs">
+      <DependentUpon>BankExamList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\BankExamAdmin\BankExamList.aspx.designer.cs">
+      <DependentUpon>BankExamList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\PostalCardAdminPanel.ascx.cs">
+      <DependentUpon>PostalCardAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\PostalCardAdminPanel.ascx.designer.cs">
+      <DependentUpon>PostalCardAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\GeustUser_Admin.aspx.cs">
+      <DependentUpon>GeustUser_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\GeustUser_Admin.aspx.designer.cs">
+      <DependentUpon>GeustUser_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\KidsUser_Admin.aspx.designer.cs">
+      <DependentUpon>KidsUser_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PostalCardAdmin\PostalCardAdmin.aspx.cs">
+      <DependentUpon>PostalCardAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\PostalCardAdmin\PostalCardAdmin.aspx.designer.cs">
+      <DependentUpon>PostalCardAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PostalCardAdmin\PostalCardList.aspx.cs">
+      <DependentUpon>PostalCardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\PostalCardAdmin\PostalCardList.aspx.designer.cs">
+      <DependentUpon>PostalCardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\DynamicPages\DynamicPages_Admin.aspx.cs">
+      <DependentUpon>DynamicPages_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\DynamicPages\DynamicPages_Admin.aspx.designer.cs">
+      <DependentUpon>DynamicPages_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\BankExamAdminPanel.ascx.cs">
+      <DependentUpon>BankExamAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\BankExamAdminPanel.ascx.designer.cs">
+      <DependentUpon>BankExamAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\WishesAdminPanel.ascx.cs">
+      <DependentUpon>WishesAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\WishesAdminPanel.ascx.designer.cs">
+      <DependentUpon>WishesAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucScoreTypeAdminPanel.ascx.cs">
+      <DependentUpon>ucScoreTypeAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucScoreTypeAdminPanel.ascx.designer.cs">
+      <DependentUpon>ucScoreTypeAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\SystemUserAdminPanel.ascx.cs">
+      <DependentUpon>SystemUserAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\SystemUserAdminPanel.ascx.designer.cs">
+      <DependentUpon>SystemUserAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\KidsUser_Admin_Branch.aspx.cs">
+      <DependentUpon>KidsUser_Admin_Branch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\KidsUser_Admin_Branch.aspx.designer.cs">
+      <DependentUpon>KidsUser_Admin_Branch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeAdmin.aspx.cs">
+      <DependentUpon>ScoreTypeAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeAdmin.aspx.designer.cs">
+      <DependentUpon>ScoreTypeAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeList.aspx.cs">
+      <DependentUpon>ScoreTypeList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeList.aspx.designer.cs">
+      <DependentUpon>ScoreTypeList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeCeategoryAdmin.aspx.cs">
+      <DependentUpon>ScoreTypeCeategoryAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeCeategoryAdmin.aspx.designer.cs">
+      <DependentUpon>ScoreTypeCeategoryAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeCategoryList.aspx.cs">
+      <DependentUpon>ScoreTypeCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\ScoreAdmin\ScoreTypeCategoryList.aspx.designer.cs">
+      <DependentUpon>ScoreTypeCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AddEditRoles.aspx.cs">
+      <DependentUpon>AddEditRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AddEditRoles.aspx.designer.cs">
+      <DependentUpon>AddEditRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AddEditUser.aspx.cs">
+      <DependentUpon>AddEditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AddEditUser.aspx.designer.cs">
+      <DependentUpon>AddEditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AdminRoles.aspx.cs">
+      <DependentUpon>AdminRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AdminRoles.aspx.designer.cs">
+      <DependentUpon>AdminRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AdminUsers.aspx.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\SystemUserAdmin\AdminUsers.aspx.designer.cs">
+      <DependentUpon>AdminUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ConfigAdminPanel.ascx.cs">
+      <DependentUpon>ConfigAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ConfigAdminPanel.ascx.designer.cs">
+      <DependentUpon>ConfigAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucFAQAdminPanel.ascx.cs">
+      <DependentUpon>ucFAQAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucFAQAdminPanel.ascx.designer.cs">
+      <DependentUpon>ucFAQAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\PCategoryList.aspx.cs">
+      <DependentUpon>PCategoryList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\PCategoryList.aspx.designer.cs">
+      <DependentUpon>PCategoryList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\PCategoryAdmin.aspx.cs">
+      <DependentUpon>PCategoryAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\PCategoryAdmin.aspx.designer.cs">
+      <DependentUpon>PCategoryAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\FAQList.aspx.cs">
+      <DependentUpon>FAQList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\FAQList.aspx.designer.cs">
+      <DependentUpon>FAQList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\FAQAdmin.aspx.cs">
+      <DependentUpon>FAQAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\FAQAdmin\FAQAdmin.aspx.designer.cs">
+      <DependentUpon>FAQAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\ftb.imagegallery.aspx.cs">
+      <DependentUpon>ftb.imagegallery.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\ftb.imagegallery.aspx.designer.cs">
+      <DependentUpon>ftb.imagegallery.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\GameAdmin\GameAdmin.aspx.cs">
+      <DependentUpon>GameAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\GameAdmin\GameAdmin.aspx.designer.cs">
+      <DependentUpon>GameAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\GameAdmin\GameList.aspx.cs">
+      <DependentUpon>GameList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\GameAdmin\GameList.aspx.designer.cs">
+      <DependentUpon>GameList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucGameAdminPanel.ascx.cs">
+      <DependentUpon>ucGameAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucGameAdminPanel.ascx.designer.cs">
+      <DependentUpon>ucGameAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\KidsUserAdminPanel.ascx.cs">
+      <DependentUpon>KidsUserAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\KidsUserAdminPanel.ascx.designer.cs">
+      <DependentUpon>KidsUserAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucDynamicPageAdminPanel.ascx.cs">
+      <DependentUpon>ucDynamicPageAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucDynamicPageAdminPanel.ascx.designer.cs">
+      <DependentUpon>ucDynamicPageAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\KidsUser_Admin.aspx.cs">
+      <DependentUpon>KidsUser_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsAdmin.aspx.cs">
+      <DependentUpon>NewsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsAdmin.aspx.designer.cs">
+      <DependentUpon>NewsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsCatAdmin.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>NewsCatAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsCatAdmin.aspx.designer.cs">
+      <DependentUpon>NewsCatAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsCatList.aspx.cs">
+      <DependentUpon>NewsCatList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsCatList.aspx.designer.cs">
+      <DependentUpon>NewsCatList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsList.aspx.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\NewsAdmin\NewsList.aspx.designer.cs">
+      <DependentUpon>NewsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucNewsAdminPanel.ascx.cs">
+      <DependentUpon>ucNewsAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\ucNewsAdminPanel.ascx.designer.cs">
+      <DependentUpon>ucNewsAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\AddEditPoll.aspx.cs">
+      <DependentUpon>AddEditPoll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\AddEditPoll.aspx.designer.cs">
+      <DependentUpon>AddEditPoll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\AddEditPollItem.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>AddEditPollItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\AddEditPollItem.aspx.designer.cs">
+      <DependentUpon>AddEditPollItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\PollItemsList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PollItemsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\PollItemsList.aspx.designer.cs">
+      <DependentUpon>PollItemsList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\PollList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>PollList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\pollsAdminPanel.ascx.cs">
+      <DependentUpon>pollsAdminPanel.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\HomeWidget\pollsAdminPanel.ascx.designer.cs">
+      <DependentUpon>pollsAdminPanel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\PollsAdmin\PollList.aspx.designer.cs">
+      <DependentUpon>PollList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\Logging\ViewLogs.aspx.cs">
+      <DependentUpon>ViewLogs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\Logging\ViewLogs.aspx.designer.cs">
+      <DependentUpon>ViewLogs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\WishesAdmin\WishesAdmin_Admin.aspx.cs">
+      <DependentUpon>WishesAdmin_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\WishesAdmin\WishesAdmin_Admin.aspx.designer.cs">
+      <DependentUpon>WishesAdmin_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\_Config\ConfigsAdmin.aspx.cs">
+      <DependentUpon>ConfigsAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\_Config\ConfigsAdmin.aspx.designer.cs">
+      <DependentUpon>ConfigsAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankStory\BankStoryExam.aspx.cs">
+      <DependentUpon>BankStoryExam.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankStory\BankStoryExam.aspx.designer.cs">
+      <DependentUpon>BankStoryExam.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankStory\BankStoryExamList.aspx.cs">
+      <DependentUpon>BankStoryExamList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankStory\BankStoryExamList.aspx.designer.cs">
+      <DependentUpon>BankStoryExamList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BankStory\BankStoryHome.aspx.cs">
+      <DependentUpon>BankStoryHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BankStory\BankStoryHome.aspx.designer.cs">
+      <DependentUpon>BankStoryHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\GridViewPaging.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Classes\OrderIdGenerator.cs" />
+    <Compile Include="AdminCP\fm2.aspx.cs">
+      <DependentUpon>fm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\fm2.aspx.designer.cs">
+      <DependentUpon>fm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\ResponseFilter.cs" />
+    <Compile Include="Contact\ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact\ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\PrintAccForm.aspx.cs">
+      <DependentUpon>PrintAccForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminCP\KidsUserAdmin\PrintAccForm.aspx.designer.cs">
+      <DependentUpon>PrintAccForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\DataListPager.ascx.cs">
+      <DependentUpon>DataListPager.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\DataListPager.ascx.designer.cs">
+      <DependentUpon>DataListPager.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_Festival\FestivalList.aspx.cs">
+      <DependentUpon>FestivalList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_Festival\FestivalList.aspx.designer.cs">
+      <DependentUpon>FestivalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\TempUserMapperManager.cs" />
+    <Compile Include="Scores\ScoreCalculator.cs" />
+    <Compile Include="WishAccount\PostalCardList.aspx.cs">
+      <DependentUpon>PostalCardList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\PostalCardList.aspx.designer.cs">
+      <DependentUpon>PostalCardList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="_FAQ\FAQList.aspx.cs">
+      <DependentUpon>FAQList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_FAQ\FAQList.aspx.designer.cs">
+      <DependentUpon>FAQList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBox\NewsSendToMail.aspx.cs">
+      <DependentUpon>NewsSendToMail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoBox\NewsSendToMail.aspx.designer.cs">
+      <DependentUpon>NewsSendToMail.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\GameFileManager.aspx.cs">
+      <DependentUpon>GameFileManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KidsGame\GameFileManager.aspx.designer.cs">
+      <DependentUpon>GameFileManager.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\TempLinkManager.cs" />
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AdminucHomeTopLogo.ascx.cs">
+      <DependentUpon>AdminucHomeTopLogo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\AdminucHomeTopLogo.ascx.designer.cs">
+      <DependentUpon>AdminucHomeTopLogo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\CheckStatus_Auto.cs" />
+    <Compile Include="Payment\MerchantBeforePost.aspx.cs">
+      <DependentUpon>MerchantBeforePost.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\MerchantBeforePost.aspx.designer.cs">
+      <DependentUpon>MerchantBeforePost.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentFactorWidget.ascx.cs">
+      <DependentUpon>PaymentFactorWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentFactorWidget.ascx.designer.cs">
+      <DependentUpon>PaymentFactorWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\Payment_Commit.aspx.cs">
+      <DependentUpon>Payment_Commit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\Payment_Commit.aspx.designer.cs">
+      <DependentUpon>Payment_Commit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Payment\PaymentList.ascx.cs">
+      <DependentUpon>PaymentList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Payment\PaymentList.ascx.designer.cs">
+      <DependentUpon>PaymentList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\Poll.aspx.cs">
+      <DependentUpon>Poll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poll\Poll.aspx.designer.cs">
+      <DependentUpon>Poll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Editable_UserProfileWidget.ascx.cs">
+      <DependentUpon>Editable_UserProfileWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Editable_UserProfileWidget.ascx.designer.cs">
+      <DependentUpon>Editable_UserProfileWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\InviteFriend.aspx.cs">
+      <DependentUpon>InviteFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\InviteFriend.aspx.designer.cs">
+      <DependentUpon>InviteFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\KidsBirthday.aspx.cs">
+      <DependentUpon>KidsBirthday.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\KidsBirthday.aspx.designer.cs">
+      <DependentUpon>KidsBirthday.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\KidsBirthDayWidget.ascx.cs">
+      <DependentUpon>KidsBirthDayWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\KidsBirthDayWidget.ascx.designer.cs">
+      <DependentUpon>KidsBirthDayWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\LastSiteUserWidget.ascx.cs">
+      <DependentUpon>LastSiteUserWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\LastSiteUserWidget.ascx.designer.cs">
+      <DependentUpon>LastSiteUserWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\LastSiteUser.aspx.cs">
+      <DependentUpon>LastSiteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\LastSiteUser.aspx.designer.cs">
+      <DependentUpon>LastSiteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\TodayKidsBirthDay.aspx.cs">
+      <DependentUpon>TodayKidsBirthDay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\TodayKidsBirthDay.aspx.designer.cs">
+      <DependentUpon>TodayKidsBirthDay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scores\PowerKidsUser.aspx.cs">
+      <DependentUpon>PowerKidsUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scores\PowerKidsUser.aspx.designer.cs">
+      <DependentUpon>PowerKidsUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scores\PowerKidsUserWidget.ascx.cs">
+      <DependentUpon>PowerKidsUserWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scores\PowerKidsUserWidget.ascx.designer.cs">
+      <DependentUpon>PowerKidsUserWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Scores\ScoreList.ascx.cs">
+      <DependentUpon>ScoreList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scores\ScoreList.ascx.designer.cs">
+      <DependentUpon>ScoreList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\GanjTunelCalculator.ascx.cs">
+      <DependentUpon>GanjTunelCalculator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\GanjTunelCalculator.ascx.designer.cs">
+      <DependentUpon>GanjTunelCalculator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\GanjTunnel.aspx.cs">
+      <DependentUpon>GanjTunnel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\GanjTunnel.aspx.designer.cs">
+      <DependentUpon>GanjTunnel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\PostalCardShow.aspx.cs">
+      <DependentUpon>PostalCardShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\PostalCardShow.aspx.designer.cs">
+      <DependentUpon>PostalCardShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\WishAccHome.aspx.cs">
+      <DependentUpon>WishAccHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\WishAccHome.aspx.designer.cs">
+      <DependentUpon>WishAccHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\WishWidget.ascx.cs">
+      <DependentUpon>WishWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\WishWidget.ascx.designer.cs">
+      <DependentUpon>WishWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="XMLProvider.aspx.cs">
+      <DependentUpon>XMLProvider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="XMLProvider.aspx.designer.cs">
+      <DependentUpon>XMLProvider.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\EMailing.cs" />
+    <Compile Include="Classes\FileUploadManagement\FileUploadUtil.cs" />
+    <Compile Include="Classes\FormBaseClasses.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\RSSUtility.cs" />
+    <Compile Include="Classes\SessionItems.cs" />
+    <Compile Include="DefaultKids.aspx.cs">
+      <DependentUpon>DefaultKids.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DefaultKids.aspx.designer.cs">
+      <DependentUpon>DefaultKids.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Entry.aspx.cs">
+      <DependentUpon>Entry.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Entry.aspx.designer.cs">
+      <DependentUpon>Entry.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JpegImage.aspx.cs">
+      <DependentUpon>JpegImage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JpegImage.aspx.designer.cs">
+      <DependentUpon>JpegImage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\GameHome.aspx.cs">
+      <DependentUpon>GameHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KidsGame\GameHome.aspx.designer.cs">
+      <DependentUpon>GameHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\GameShow.aspx.cs">
+      <DependentUpon>GameShow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KidsGame\GameShow.aspx.designer.cs">
+      <DependentUpon>GameShow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KidsGame\ScoreService.asmx.cs">
+      <DependentUpon>ScoreService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Fa.Master.cs">
+      <DependentUpon>Fa.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Fa.Master.designer.cs">
+      <DependentUpon>Fa.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\TopMenu.ascx.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\TopMenu.ascx.designer.cs">
+      <DependentUpon>TopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ucHomeTopLogo.ascx.cs">
+      <DependentUpon>ucHomeTopLogo.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\ucHomeTopLogo.ascx.designer.cs">
+      <DependentUpon>ucHomeTopLogo.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\ResponseItemsTable.cs" />
+    <Compile Include="Poll\showPoll.ascx.cs">
+      <DependentUpon>showPoll.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poll\showPoll.ascx.designer.cs">
+      <DependentUpon>showPoll.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\AdminTopMenu.ascx.cs">
+      <DependentUpon>AdminTopMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\AdminTopMenu.ascx.designer.cs">
+      <DependentUpon>AdminTopMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Masters\ucMenuSide.ascx.cs">
+      <DependentUpon>ucMenuSide.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Masters\ucMenuSide.ascx.designer.cs">
+      <DependentUpon>ucMenuSide.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBox\NewList.aspx.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoBox\NewList.aspx.designer.cs">
+      <DependentUpon>NewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBox\PrintNews.aspx.cs">
+      <DependentUpon>PrintNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoBox\PrintNews.aspx.designer.cs">
+      <DependentUpon>PrintNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\showPollResults.ascx.cs">
+      <DependentUpon>showPollResults.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Poll\showPollResults.ascx.designer.cs">
+      <DependentUpon>showPollResults.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\ShowThnkEval.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>ShowThnkEval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\ShowThnkEval.aspx.designer.cs">
+      <DependentUpon>ShowThnkEval.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\thnkEvalList.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>thnkEvalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Poll\thnkEvalList.aspx.designer.cs">
+      <DependentUpon>thnkEvalList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration\KidsUserSateWidget.ascx.cs">
+      <DependentUpon>KidsUserSateWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\KidsUserSateWidget.ascx.designer.cs">
+      <DependentUpon>KidsUserSateWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Profile.aspx.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Profile.aspx.designer.cs">
+      <DependentUpon>Profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\RegisterWishAccount.aspx.cs">
+      <DependentUpon>RegisterWishAccount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\RegisterWishAccount.aspx.designer.cs">
+      <DependentUpon>RegisterWishAccount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Registration\UserProfileWidget.ascx.cs">
+      <DependentUpon>UserProfileWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration\UserProfileWidget.ascx.designer.cs">
+      <DependentUpon>UserProfileWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="RSSFeed.aspx.cs">
+      <DependentUpon>RSSFeed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RSSFeed.aspx.designer.cs">
+      <DependentUpon>RSSFeed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBox\ShowNews.aspx.cs">
+      <DependentUpon>ShowNews.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoBox\ShowNews.aspx.designer.cs">
+      <DependentUpon>ShowNews.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DynPage\DynamicPage.aspx.cs">
+      <DependentUpon>DynamicPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DynPage\DynamicPage.aspx.designer.cs">
+      <DependentUpon>DynamicPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scores\ScoreWidget.ascx.cs">
+      <DependentUpon>ScoreWidget.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scores\ScoreWidget.ascx.designer.cs">
+      <DependentUpon>ScoreWidget.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\KidsScoreServiceRef\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\ucDatePicker.ascx.cs">
+      <DependentUpon>ucDatePicker.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\ucDatePicker.ascx.designer.cs">
+      <DependentUpon>ucDatePicker.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="InfoBox\ucNewsMarque.ascx.cs">
+      <DependentUpon>ucNewsMarque.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InfoBox\ucNewsMarque.ascx.designer.cs">
+      <DependentUpon>ucNewsMarque.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\AccBill.ascx.cs">
+      <DependentUpon>AccBill.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\AccBill.ascx.designer.cs">
+      <DependentUpon>AccBill.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\WishAccountCalculator.ascx.cs">
+      <DependentUpon>WishAccountCalculator.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\WishAccountCalculator.ascx.designer.cs">
+      <DependentUpon>WishAccountCalculator.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="WishAccount\WishList.ascx.cs">
+      <DependentUpon>WishList.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WishAccount\WishList.ascx.designer.cs">
+      <DependentUpon>WishList.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="_FAQ\ShowFAQ.aspx.cs">
+      <DependentUpon>ShowFAQ.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="_FAQ\ShowFAQ.aspx.designer.cs">
+      <DependentUpon>ShowFAQ.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="AdminCP\FestivalAdmin\" />
+    <Folder Include="AdminCP\Files\Festival\" />
+    <Folder Include="AdminCP\Files\Game\" />
+    <Folder Include="AdminCP\Files\GeustUser\Temp\" />
+    <Folder Include="AdminCP\Files\KidsAccForm\Temp\" />
+    <Folder Include="AdminCP\Files\KidsPic\" />
+    <Folder Include="AdminCP\Files\News\" />
+    <Folder Include="AdminCP\Files\PostalCard\Temp\" />
+    <Folder Include="AdminCP\Files\Wish\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Masters\Admin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BMIBranch.ServiceProxy\BMIBranch.ServiceProxy.csproj">
+      <Project>{03EBFDDF-7B33-449A-A9DF-B1BB0ACF5B19}</Project>
+      <Name>BMIBranch.ServiceProxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BMISSO\BMISSOClientHelper\BMISSOClientHelper.csproj">
+      <Project>{9F157EF9-1478-4279-B47F-E39F77F32D3D}</Project>
+      <Name>BMISSOClientHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Configs\Kids.Common.csproj">
+      <Project>{3A44DE10-8961-403F-9F7A-558AF8A15142}</Project>
+      <Name>Kids.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EPSMerchantHelper\EPS.MerchantHelper.csproj">
+      <Project>{98F138CE-3D22-48FF-A4E3-C4E18B3130F8}</Project>
+      <Name>EPS.MerchantHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kids.EntitiesModel\Kids.EntitiesModel.csproj">
+      <Project>{A7DB1C51-C991-4039-AC9B-042A3C23345D}</Project>
+      <Name>Kids.EntitiesModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kids.LoggingHelper\Kids.LoggingHelper.csproj">
+      <Project>{A6DF15FA-0799-4805-99C8-A7C4C8CD958E}</Project>
+      <Name>Kids.LoggingHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kids.Utility\Kids.Utility.csproj">
+      <Project>{0B3C4F1C-DFEC-4F66-BA81-61B8C22022B5}</Project>
+      <Name>Kids.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\KidsScoreServiceRef\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\KidsScoreServiceRef\ScoreService.wsdl" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3254</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:7008</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

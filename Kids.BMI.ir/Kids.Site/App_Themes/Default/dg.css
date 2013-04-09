@@ -1,0 +1,127 @@
+﻿.Dg
+{
+    border-right: gray 1px solid;
+    border-top: gray 1px solid;
+    border-left: gray 1px solid;
+    border-bottom: gray 1px solid;
+}
+
+.DgHeader
+{
+    background-image: url(/App_Themes/Default/images/DG/DgHeader.gif);
+    height: 29px;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Tahoma;
+    text-transform: capitalize;
+    color: black;
+    
+}
+
+
+.DgPager
+{
+    background-image: url(/App_Themes/Default/images/DG/DgPager.gif);
+    height: 14px;
+    text-align: center;
+    width:auto;
+    background-repeat:repeat-x;
+}
+
+
+.DgItem
+{
+    height: 14px;
+    background-color:WhiteSmoke;
+
+}
+
+.DgSItem
+{
+    height: 14px;
+    background-color: #0D43C7;
+    color:#FFF;
+    
+
+}
+
+.DgAlt
+{
+    height: 14px;
+    background-color: #ffffff;
+
+}
+
+.DgOver
+{
+    height: 14px;
+    background-color:#0D43C7;
+    color:#FFF;
+    cursor:pointer;
+}
+
+
+.DgButton
+{
+    width: 70px;
+    height: 17px;
+    background-image: url(/App_Themes/Default/images/DG/header.jpg);
+    color:#535353;
+    border-right: silver 1px solid;
+    border-top: silver 1px solid;
+    border-left: silver 1px solid;
+    border-bottom: silver 1px solid;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.DgButton2
+{
+    width: 90px;
+    height: 17px;
+    background-image: url(/App_Themes/Default/images/DG/header.jpg);
+    color:#535353;
+    border-right: silver 1px solid;
+    border-top: silver 1px solid;
+    border-left: silver 1px solid;
+    border-bottom: silver 1px solid;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.DgButton3
+{
+    width: 22px;
+    height: 17px;
+    background-image: url(/App_Themes/Default/images/DG/header.jpg);
+    color:#535353;
+    border-right: silver 1px solid;
+    border-top: silver 1px solid;
+    border-left: silver 1px solid;
+    border-bottom: silver 1px solid;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.DgButton4
+{
+    width: 40px;
+    height: 17px;
+    background-image: url(/App_Themes/Default/images/DG/header.jpg);
+    color:#535353;
+    border-right: silver 1px solid;
+    border-top: silver 1px solid;
+    border-left: silver 1px solid;
+    border-bottom: silver 1px solid;
+    cursor: pointer;
+    font-family: Tahoma;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+

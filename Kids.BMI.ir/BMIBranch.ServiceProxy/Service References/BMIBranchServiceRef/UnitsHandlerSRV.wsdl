@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://bmi.ir/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://bmi.ir/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://bmi.ir/">
+      <s:element name="GetUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="unitId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUnitResult" type="tns:Unit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Unit">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UnitId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SupervisorUnitId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitTypeId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProvinceId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CityId" nillable="true" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PostalCode" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhonePrefix" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="GeoData" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="DegreeId" nillable="true" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IsSuperVisorUnit" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Arzi" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Siba" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ATM" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PinPad" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SMS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="TelBank" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="HajService" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="Webkiosk" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="PLS" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="DepositBox" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="SWIFT" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="EmailAddress" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="OperateDate" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="PeopleNo" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="IslamicPromote" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="QarzulHasana" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="LastUpdateDate" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="LastUpdateUser" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DefaultImageFile" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttachFileName1" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttachFileName2" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="AttachFileName3" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="StatusId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="AutoUpdate" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="FindUnits">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="unitId" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="title" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="countryId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="provinceId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="cityId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="degreeId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="unitTypeId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="supervisorId" nillable="true" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="statusId" nillable="true" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="postalCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="phone" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="address" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="arzi" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="atm" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="webKiosk" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="hajService" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="siba" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="sms" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="swift" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="telBank" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pinpad" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="pls" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="depositBox" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FindUnitsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="FindUnitsResult" type="tns:ArrayOfUnit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUnit">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Unit" nillable="true" type="tns:Unit" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllSuperVisorList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllSuperVisorListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllSuperVisorListResult" type="tns:ArrayOfUnit" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllUnitDegree">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUnitDegreeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUnitDegreeResult" type="tns:ArrayOfUnitDegree" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUnitDegree">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UnitDegree" nillable="true" type="tns:UnitDegree" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UnitDegree">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="DegreeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetUnitType">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="unitTypeId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnitTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUnitTypeResult" type="tns:UnitType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="UnitType">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="UnitTypeId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllUnitType">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUnitTypeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUnitTypeResult" type="tns:ArrayOfUnitType" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUnitType">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UnitType" nillable="true" type="tns:UnitType" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllUnitStaus">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUnitStausResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUnitStausResult" type="tns:ArrayOfUnitStatus" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUnitStatus">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UnitStatus" nillable="true" type="tns:UnitStatus" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UnitStatus">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="StatusId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllCountry">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllCountryResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCountryResult" type="tns:ArrayOfCountry" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCountry">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Country" nillable="true" type="tns:Country" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Country">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CountryId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllProvince">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="countryId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllProvinceResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllProvinceResult" type="tns:ArrayOfProvince" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfProvince">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Province" nillable="true" type="tns:Province" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Province">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="ProvinceId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="CountryId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllCity">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="cityId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllCityResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllCityResult" type="tns:ArrayOfCity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfCity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="City" nillable="true" type="tns:City" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="City">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="CityId" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="ProvinceId" type="s:int" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleFa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleEn" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TitleAr" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAllPhone">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="unitId" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAllPhoneResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllPhoneResult" type="tns:ArrayOfUnitPhone" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfUnitPhone">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UnitPhone" nillable="true" type="tns:UnitPhone" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="UnitPhone">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Serial" type="s:int" />
+          <s:element minOccurs="1" maxOccurs="1" name="UnitId" type="s:long" />
+          <s:element minOccurs="1" maxOccurs="1" name="Lang" type="tns:LangTypes" />
+          <s:element minOccurs="0" maxOccurs="1" name="Title" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="PhoneNumber" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="SortId" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="LangTypes">
+        <s:restriction base="s:string">
+          <s:enumeration value="Fa" />
+          <s:enumeration value="En" />
+          <s:enumeration value="Ar" />
+          <s:enumeration value="Fr" />
+        </s:restriction>
+      </s:simpleType>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnit" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="FindUnitsSoapIn">
+    <wsdl:part name="parameters" element="tns:FindUnits" />
+  </wsdl:message>
+  <wsdl:message name="FindUnitsSoapOut">
+    <wsdl:part name="parameters" element="tns:FindUnitsResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSuperVisorListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllSuperVisorList" />
+  </wsdl:message>
+  <wsdl:message name="GetAllSuperVisorListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllSuperVisorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitDegreeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUnitDegree" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitDegreeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUnitDegreeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnitType" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnitTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitTypeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUnitType" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitTypeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUnitTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitStausSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUnitStaus" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitStausSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUnitStausResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCountrySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCountry" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCountrySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCountryResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProvinceSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllProvince" />
+  </wsdl:message>
+  <wsdl:message name="GetAllProvinceSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllProvinceResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCitySoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllCity" />
+  </wsdl:message>
+  <wsdl:message name="GetAllCitySoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllCityResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPhoneSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllPhone" />
+  </wsdl:message>
+  <wsdl:message name="GetAllPhoneSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllPhoneResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UnitsHandlerSRVSoap">
+    <wsdl:operation name="GetUnit">
+      <wsdl:input message="tns:GetUnitSoapIn" />
+      <wsdl:output message="tns:GetUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FindUnits">
+      <wsdl:input message="tns:FindUnitsSoapIn" />
+      <wsdl:output message="tns:FindUnitsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperVisorList">
+      <wsdl:input message="tns:GetAllSuperVisorListSoapIn" />
+      <wsdl:output message="tns:GetAllSuperVisorListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitDegree">
+      <wsdl:input message="tns:GetAllUnitDegreeSoapIn" />
+      <wsdl:output message="tns:GetAllUnitDegreeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitType">
+      <wsdl:input message="tns:GetUnitTypeSoapIn" />
+      <wsdl:output message="tns:GetUnitTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitType">
+      <wsdl:input message="tns:GetAllUnitTypeSoapIn" />
+      <wsdl:output message="tns:GetAllUnitTypeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitStaus">
+      <wsdl:input message="tns:GetAllUnitStausSoapIn" />
+      <wsdl:output message="tns:GetAllUnitStausSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCountry">
+      <wsdl:input message="tns:GetAllCountrySoapIn" />
+      <wsdl:output message="tns:GetAllCountrySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProvince">
+      <wsdl:input message="tns:GetAllProvinceSoapIn" />
+      <wsdl:output message="tns:GetAllProvinceSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCity">
+      <wsdl:input message="tns:GetAllCitySoapIn" />
+      <wsdl:output message="tns:GetAllCitySoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPhone">
+      <wsdl:input message="tns:GetAllPhoneSoapIn" />
+      <wsdl:output message="tns:GetAllPhoneSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UnitsHandlerSRVSoap" type="tns:UnitsHandlerSRVSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUnit">
+      <soap:operation soapAction="http://bmi.ir/GetUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUnits">
+      <soap:operation soapAction="http://bmi.ir/FindUnits" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperVisorList">
+      <soap:operation soapAction="http://bmi.ir/GetAllSuperVisorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitDegree">
+      <soap:operation soapAction="http://bmi.ir/GetAllUnitDegree" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitType">
+      <soap:operation soapAction="http://bmi.ir/GetUnitType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitType">
+      <soap:operation soapAction="http://bmi.ir/GetAllUnitType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitStaus">
+      <soap:operation soapAction="http://bmi.ir/GetAllUnitStaus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCountry">
+      <soap:operation soapAction="http://bmi.ir/GetAllCountry" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProvince">
+      <soap:operation soapAction="http://bmi.ir/GetAllProvince" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCity">
+      <soap:operation soapAction="http://bmi.ir/GetAllCity" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPhone">
+      <soap:operation soapAction="http://bmi.ir/GetAllPhone" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UnitsHandlerSRVSoap12" type="tns:UnitsHandlerSRVSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetUnit">
+      <soap12:operation soapAction="http://bmi.ir/GetUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FindUnits">
+      <soap12:operation soapAction="http://bmi.ir/FindUnits" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllSuperVisorList">
+      <soap12:operation soapAction="http://bmi.ir/GetAllSuperVisorList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitDegree">
+      <soap12:operation soapAction="http://bmi.ir/GetAllUnitDegree" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitType">
+      <soap12:operation soapAction="http://bmi.ir/GetUnitType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitType">
+      <soap12:operation soapAction="http://bmi.ir/GetAllUnitType" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllUnitStaus">
+      <soap12:operation soapAction="http://bmi.ir/GetAllUnitStaus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCountry">
+      <soap12:operation soapAction="http://bmi.ir/GetAllCountry" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllProvince">
+      <soap12:operation soapAction="http://bmi.ir/GetAllProvince" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllCity">
+      <soap12:operation soapAction="http://bmi.ir/GetAllCity" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllPhone">
+      <soap12:operation soapAction="http://bmi.ir/GetAllPhone" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UnitsHandlerSRV">
+    <wsdl:port name="UnitsHandlerSRVSoap" binding="tns:UnitsHandlerSRVSoap">
+      <soap:address location="https://units.bmi.ir/services/UnitsHandlerSRV.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UnitsHandlerSRVSoap12" binding="tns:UnitsHandlerSRVSoap12">
+      <soap12:address location="https://units.bmi.ir/services/UnitsHandlerSRV.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

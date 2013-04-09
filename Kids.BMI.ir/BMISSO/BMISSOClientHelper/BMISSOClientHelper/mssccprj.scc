@@ -1,0 +1,13 @@
+SCC = This is a Source Code Control file
+
+[BMIMembershipClientEngine.csproj]
+SCC_Aux_Path = "\\192.168.53.20\vssdb"
+SCC_Project_Name = "$/BMISSO.root/BMISSO", CVEDAAAA
+
+[BMISSO.sln]
+SCC_Aux_Path = "\\192.168.53.20\vssdb"
+SCC_Project_Name = "$/BMISSO.root/BMISSO", CVEDAAAA
+
+[BMISSOClientHelper.csproj]
+SCC_Aux_Path = "\\192.168.53.20\vssdb"
+SCC_Project_Name = "$/BMISSO.root/BMISSO/BMISSO/BMISSOClientHelper", CVFDAAAA

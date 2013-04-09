@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="AddGameScore">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GameId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ScoreId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Value" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGameScoreResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="AddGameScoreForTempUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TempUserId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="GameId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="ScoreId" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="Value" type="s:long" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddGameScoreForTempUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="IsValidUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TempUserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="IsValidUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="IsValidUserResult" type="tns:TempUser" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TempUser">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Family" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Sex" type="s:boolean" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="KeepAliveTempUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="TempUserId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="KeepAliveTempUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="KeepAliveTempUserResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AddGameScoreSoapIn">
+    <wsdl:part name="parameters" element="tns:AddGameScore" />
+  </wsdl:message>
+  <wsdl:message name="AddGameScoreSoapOut">
+    <wsdl:part name="parameters" element="tns:AddGameScoreResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddGameScoreForTempUserSoapIn">
+    <wsdl:part name="parameters" element="tns:AddGameScoreForTempUser" />
+  </wsdl:message>
+  <wsdl:message name="AddGameScoreForTempUserSoapOut">
+    <wsdl:part name="parameters" element="tns:AddGameScoreForTempUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IsValidUserSoapIn">
+    <wsdl:part name="parameters" element="tns:IsValidUser" />
+  </wsdl:message>
+  <wsdl:message name="IsValidUserSoapOut">
+    <wsdl:part name="parameters" element="tns:IsValidUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="KeepAliveTempUserSoapIn">
+    <wsdl:part name="parameters" element="tns:KeepAliveTempUser" />
+  </wsdl:message>
+  <wsdl:message name="KeepAliveTempUserSoapOut">
+    <wsdl:part name="parameters" element="tns:KeepAliveTempUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ScoreServiceSoap">
+    <wsdl:operation name="AddGameScore">
+      <wsdl:input message="tns:AddGameScoreSoapIn" />
+      <wsdl:output message="tns:AddGameScoreSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddGameScoreForTempUser">
+      <wsdl:input message="tns:AddGameScoreForTempUserSoapIn" />
+      <wsdl:output message="tns:AddGameScoreForTempUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="IsValidUser">
+      <wsdl:input message="tns:IsValidUserSoapIn" />
+      <wsdl:output message="tns:IsValidUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="KeepAliveTempUser">
+      <wsdl:input message="tns:KeepAliveTempUserSoapIn" />
+      <wsdl:output message="tns:KeepAliveTempUserSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ScoreServiceSoap" type="tns:ScoreServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddGameScore">
+      <soap:operation soapAction="http://tempuri.org/AddGameScore" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGameScoreForTempUser">
+      <soap:operation soapAction="http://tempuri.org/AddGameScoreForTempUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidUser">
+      <soap:operation soapAction="http://tempuri.org/IsValidUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepAliveTempUser">
+      <soap:operation soapAction="http://tempuri.org/KeepAliveTempUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ScoreServiceSoap12" type="tns:ScoreServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AddGameScore">
+      <soap12:operation soapAction="http://tempuri.org/AddGameScore" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddGameScoreForTempUser">
+      <soap12:operation soapAction="http://tempuri.org/AddGameScoreForTempUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="IsValidUser">
+      <soap12:operation soapAction="http://tempuri.org/IsValidUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="KeepAliveTempUser">
+      <soap12:operation soapAction="http://tempuri.org/KeepAliveTempUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ScoreService">
+    <wsdl:port name="ScoreServiceSoap" binding="tns:ScoreServiceSoap">
+      <soap:address location="http://localhost:7008/KidsGame/ScoreService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ScoreServiceSoap12" binding="tns:ScoreServiceSoap12">
+      <soap12:address location="http://localhost:7008/KidsGame/ScoreService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

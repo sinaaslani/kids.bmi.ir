@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0B3C4F1C-DFEC-4F66-BA81-61B8C22022B5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kids.Utility</RootNamespace>
+    <AssemblyName>Kids.Utility</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'TEST|AnyCPU'">
+    <OutputPath>bin\TEST\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.0.0, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ref\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="ISC.FTS.Upload.Security, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ref\ISC.FTS.Upload.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="SabteAhvalLibrary, Version=1.0.1954.19773, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Ref\SabteAhvalLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FTPHelper\ActiveFTPImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTPHelper\IFTPClient.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FTPHelper\PassiveFTPImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Impersonate\ImpersonateHelper.cs" />
+    <Compile Include="RSS.NET\Collections\ExceptionCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssCategoryCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssChannelCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssFeedCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssItemCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssModuleCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssModuleItemCollection.cs" />
+    <Compile Include="RSS.NET\Collections\RssModuleItemCollectionCollection.cs" />
+    <Compile Include="RSS.NET\RssChannel\RssChannel.cs" />
+    <Compile Include="RSS.NET\RssChannel\RssCloud.cs" />
+    <Compile Include="RSS.NET\RssChannel\RssImage.cs" />
+    <Compile Include="RSS.NET\RssChannel\RssTextInput.cs" />
+    <Compile Include="RSS.NET\RssItem\RssEnclosure.cs" />
+    <Compile Include="RSS.NET\RssItem\RssGuid.cs" />
+    <Compile Include="RSS.NET\RssItem\RssItem.cs" />
+    <Compile Include="RSS.NET\RssItem\RssSource.cs" />
+    <Compile Include="RSS.NET\RssModules\RssBlogChannel.cs" />
+    <Compile Include="RSS.NET\RssModules\RssCreativeCommon.cs" />
+    <Compile Include="RSS.NET\RssModules\RssPhotoAlbum.cs" />
+    <Compile Include="RSS.NET\RSS\RssFeed.cs" />
+    <Compile Include="RSS.NET\RSS\RssModule.cs" />
+    <Compile Include="RSS.NET\RSS\RssModuleItem.cs" />
+    <Compile Include="RSS.NET\RSS\RssReader.cs" />
+    <Compile Include="RSS.NET\RSS\RssWriter.cs" />
+    <Compile Include="RSS.NET\Shared\DBBool.cs" />
+    <Compile Include="RSS.NET\Shared\RssCategory.cs" />
+    <Compile Include="RSS.NET\Shared\RssCompact.cs" />
+    <Compile Include="RSS.NET\Shared\RssDefault.cs" />
+    <Compile Include="RSS.NET\Shared\RssElement.cs" />
+    <Compile Include="RSS.NET\Shared\RssEnumerators.cs" />
+    <Compile Include="SerializeHelper.cs" />
+    <Compile Include="Captcha\CaptchaImage.cs" />
+    <Compile Include="ImpersonateHelper.cs" />
+    <Compile Include="clsWaveProcessor.cs" />
+    <Compile Include="Cryptography.cs" />
+    <Compile Include="CSVUtility\CSVUtil.cs" />
+    <Compile Include="CSVUtility\Csv\CachedCsvReader.cs" />
+    <Compile Include="CSVUtility\Csv\CachedCsvReader.CsvBindingList.cs" />
+    <Compile Include="CSVUtility\Csv\CachedCsvReader.CsvPropertyDescriptor.cs" />
+    <Compile Include="CSVUtility\Csv\CachedCsvReader.CsvRecordComparer.cs" />
+    <Compile Include="CSVUtility\Csv\CsvReader.cs" />
+    <Compile Include="CSVUtility\Csv\CsvReader.DataReaderValidations.cs" />
+    <Compile Include="CSVUtility\Csv\CsvReader.RecordEnumerator.cs" />
+    <Compile Include="CSVUtility\Csv\Events\ParseErrorEventArgs.cs" />
+    <Compile Include="CSVUtility\Csv\Exceptions\MalformedCsvException.cs" />
+    <Compile Include="CSVUtility\Csv\Exceptions\MissingFieldCsvException.cs" />
+    <Compile Include="CSVUtility\Csv\MissingFieldAction.cs" />
+    <Compile Include="CSVUtility\Csv\ParseErrorAction.cs" />
+    <Compile Include="CSVUtility\Csv\Resources\ExceptionMessage.Designer.cs" />
+    <Compile Include="Excell\ExcelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Excell\ExcellUtility.cs" />
+    <Compile Include="GridViewPaging.cs" />
+    <Compile Include="MarkupParser\HTMLDocument.cs" />
+    <Compile Include="MarkupParser\MarkupAttribute.cs" />
+    <Compile Include="MarkupParser\MarkupDocument.cs" />
+    <Compile Include="MarkupParser\MarkupRegexHelper.cs" />
+    <Compile Include="MarkupParser\MarkupTag.cs" />
+    <Compile Include="MarkupParser\XMLDocument.cs" />
+    <Compile Include="Excell\MSWordUtiliy.cs" />
+    <Compile Include="PasswordStrength.cs" />
+    <Compile Include="PersianDateTimeFormatInfo.cs" />
+    <Compile Include="Ping_Helper\Constants.cs" />
+    <Compile Include="Ping_Helper\Enums\InternetConnectionStateType.cs" />
+    <Compile Include="Ping_Helper\Enums\PingResponseType.cs" />
+    <Compile Include="Ping_Helper\EventArgs\PingCompletedEventArgs.cs" />
+    <Compile Include="Ping_Helper\EventArgs\PingErrorEventArgs.cs" />
+    <Compile Include="Ping_Helper\EventArgs\PingResponseEventArgs.cs" />
+    <Compile Include="Ping_Helper\EventArgs\PingStartedEventArgs.cs" />
+    <Compile Include="Ping_Helper\IcmpPacket.cs" />
+    <Compile Include="Ping_Helper\NetworkUtilities.cs" />
+    <Compile Include="Ping_Helper\Ping.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Ping_Helper\PingResponse.cs" />
+    <Compile Include="Ping_Helper\Validation.cs" />
+    <Compile Include="POP3\MessageParser.cs" />
+    <Compile Include="POP3\Pop3MailClient.cs" />
+    <Compile Include="POP3\Pop3MimeClient.cs" />
+    <Compile Include="POP3\QuotedPrintable.cs" />
+    <Compile Include="POP3\RxMailMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomGenerator\RandomGen.cs" />
+    <Compile Include="TimeRange.cs" />
+    <Compile Include="TraceRoute_Helper\RouteNodeFoundEventArgs.cs" />
+    <Compile Include="TraceRoute_Helper\Tracert.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TraceRoute_Helper\TracertNode.cs" />
+    <Compile Include="Util Extension\DateTime.Extensions\TimeSpanArticulator.cs" />
+    <Compile Include="Util Extension\DateTime.Extensions\Utils.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Age.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\Extensions.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\SortMethod.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\SortStrategies\BubbleSort.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\SortStrategies\InsertionSort.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\SortStrategies\SelectionSort.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Collections\SortStrategies\ShellSort.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Computational\Mathematical.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Computational\Statistics.cs" />
+    <Compile Include="Util Extension\Number.Extensions\NumberArticulator.cs" />
+    <Compile Include="Util Extension\Number.Extensions\NumericDateTime.cs" />
+    <Compile Include="Util Extension\Number.Extensions\TimeSpanSelector.cs" />
+    <Compile Include="Util Extension\Number.Extensions\Utils.cs" />
+    <Compile Include="Convert.cs" />
+    <Compile Include="Util Extension\String.Extensions\Encode.cs" />
+    <Compile Include="Util Extension\String.Extensions\num2char.cs" />
+    <Compile Include="Util Extension\String.Extensions\Utils.cs" />
+    <Compile Include="Util Extension\String.Extensions\Validator.cs" />
+    <Compile Include="UtilityMethod.cs" />
+    <Compile Include="WebMessageBox\MessageBoxHelper.cs" />
+    <Compile Include="Zip\ZipUtili.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ref\FreeTextBox.dll" />
+    <Content Include="RandomGenerator\FemaleName.txt" />
+    <Content Include="RandomGenerator\MaleName.txt" />
+    <Content Include="RandomGenerator\Surname.txt" />
+    <Content Include="RandomGenerator\word.txt" />
+    <Content Include="Ref\AjaxControlToolkit.dll" />
+    <Content Include="Ref\Barcode.dll" />
+    <Content Include="Ref\DocumentFormat.OpenXml.dll" />
+    <Content Include="Ref\EPPlus.dll" />
+    <Content Include="Ref\ExcelPackageExtended.dll" />
+    <Content Include="Ref\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="Ref\ISC.FTS.Upload.dll" />
+    <Content Include="Ref\ISC.FTS.Upload.Security.dll" />
+    <Content Include="Ref\Microsoft.Practices.ServiceLocation.dll" />
+    <Content Include="Ref\Microsoft.Practices.Unity.dll" />
+    <Content Include="Ref\SabteAhvalLibrary.dll" />
+    <Content Include="Ref\SIC.DataAccess.EF.dll" />
+    <Content Include="Ref\SIC.Domain.Model.dll" />
+    <Content Include="Ref\SIC.Domain.Repository.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ping_Helper\Ping.resx">
+      <DependentUpon>Ping.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Ref\FreeTextBox.lic" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties BuildVersion_UseGlobalSettings="False" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

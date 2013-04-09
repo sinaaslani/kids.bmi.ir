@@ -1,0 +1,20 @@
+<publishData>
+  <publishTarget publishUrl="G:\Share\Azmoon\BMISSOService\">
+    <file relUrl="bin/BMIMembershipClientEngine.pdb" publishTime="2008/10/18 12:15:01 ب.ظ" />
+    <file relUrl="bin/SSOWebSite.dll.config" publishTime="2008/10/18 01:54:27 ب.ظ" />
+    <file relUrl="bin/BMISSOClientHelper.pdb" publishTime="2008/10/18 03:55:33 ب.ظ" />
+    <file relUrl="bin/BMIMembershipClientEngine.dll" publishTime="2008/10/18 12:15:01 ب.ظ" />
+    <file relUrl="bin/Cryptography.dll" publishTime="2008/10/18 03:55:32 ب.ظ" />
+    <file relUrl="Web.config" publishTime="2008/10/18 03:07:57 ب.ظ" />
+    <file relUrl="Default.aspx" publishTime="2008/10/18 03:52:35 ب.ظ" />
+    <file relUrl="bin/BMISSOClientHelper.dll" publishTime="2008/10/18 03:55:33 ب.ظ" />
+    <file relUrl="bin/vssver2.scc" publishTime="2008/10/11 09:18:51 ق.ظ" />
+    <file relUrl="App_Themes/Default/top_pic.gif" publishTime="2008/10/18 02:45:34 ب.ظ" />
+    <file relUrl="bin/SSOWebSite.dll" publishTime="2008/10/18 03:55:34 ب.ظ" />
+    <file relUrl="bin/Cryptography.pdb" publishTime="2008/10/18 03:55:32 ب.ظ" />
+    <file relUrl="App_Themes/Default/BULLET.gif" publishTime="2008/10/18 02:45:33 ب.ظ" />
+    <file relUrl="App_Themes/Default/main.css" publishTime="2008/10/18 02:45:33 ب.ظ" />
+    <file relUrl="bin/SSOWebSite.pdb" publishTime="2008/10/18 03:55:34 ب.ظ" />
+    <file relUrl="app.config" publishTime="2008/10/18 01:54:27 ب.ظ" />
+  </publishTarget>
+</publishData>

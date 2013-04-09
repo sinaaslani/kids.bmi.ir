@@ -1,0 +1,66 @@
+﻿using System;
+using System.Runtime.InteropServices;
+using System.Security.Principal;
+
+namespace Kids.Utility.Impersonate
+{
+    public class ImpersonateHelper
+    {
+        const int LOGON32_LOGON_INTERACTIVE = 2;
+        const int LOGON32_PROVIDER_DEFAULT = 0;
+
+        WindowsImpersonationContext impersonationContext;
+        [DllImport("advapi32.dll")]
+        static extern int LogonUserA(String lpszUserName,
+           String lpszDomain,
+           String lpszPassword,
+           int dwLogonType,
+           int dwLogonProvider,
+           ref IntPtr phToken);
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        static extern int DuplicateToken(IntPtr hToken,
+           int impersonationLevel,
+           ref IntPtr hNewToken);
+
+        [DllImport("advapi32.dll", CharSet = CharSet.Auto, SetLastError = true)]
+        static extern bool RevertToSelf();
+
+        [DllImport("kernel32.dll", CharSet = CharSet.Auto)]
+        static extern bool CloseHandle(IntPtr handle);
+
+        public  bool impersonateValidUser(String userName, String password,String domain="")
+        {
+            IntPtr token = IntPtr.Zero;
+            IntPtr tokenDuplicate = IntPtr.Zero;
+
+            if (RevertToSelf())
+            {
+                if (LogonUserA(userName, domain, password, LOGON32_LOGON_INTERACTIVE,
+                    LOGON32_PROVIDER_DEFAULT, ref token) != 0)
+                {
+                    if (DuplicateToken(token, 2, ref tokenDuplicate) != 0)
+                    {
+                        WindowsIdentity tempWindowsIdentity = new WindowsIdentity(tokenDuplicate);
+                        impersonationContext = tempWindowsIdentity.Impersonate();
+                        if (impersonationContext != null)
+                        {
+                            CloseHandle(token);
+                            CloseHandle(tokenDuplicate);
+                            return true;
+                        }
+                    }
+                }
+            }
+            if (token != IntPtr.Zero)
+                CloseHandle(token);
+            if (tokenDuplicate != IntPtr.Zero)
+                CloseHandle(tokenDuplicate);
+            return false;
+        }
+
+        public void undoImpersonation()
+        {
+            impersonationContext.Undo();
+        }
+    }
+}

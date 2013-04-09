@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMISSOService", "BMISSOService\BMISSOService.csproj", "{6BFC100A-3381-4713-92D2-1C7324FF914C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMISSOWebSite", "SSOWebSite\BMISSOWebSite.csproj", "{3AE579DE-68E1-4F0C-A463-BC271F54CC7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMISSOClientHelper", "BMISSOClientHelper\BMISSOClientHelper.csproj", "{9F157EF9-1478-4279-B47F-E39F77F32D3D}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 2
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://javad-laptop:8080/tfs/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BMISSOClientHelper\\BMISSOClientHelper.csproj
+		SccProjectName1 = BMISSOClientHelper
+		SccLocalPath1 = BMISSOClientHelper
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BFC100A-3381-4713-92D2-1C7324FF914C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BFC100A-3381-4713-92D2-1C7324FF914C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BFC100A-3381-4713-92D2-1C7324FF914C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BFC100A-3381-4713-92D2-1C7324FF914C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE579DE-68E1-4F0C-A463-BC271F54CC7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE579DE-68E1-4F0C-A463-BC271F54CC7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE579DE-68E1-4F0C-A463-BC271F54CC7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE579DE-68E1-4F0C-A463-BC271F54CC7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F157EF9-1478-4279-B47F-E39F77F32D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F157EF9-1478-4279-B47F-E39F77F32D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F157EF9-1478-4279-B47F-E39F77F32D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F157EF9-1478-4279-B47F-E39F77F32D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,5 @@
+SCC = This is a Source Code Control file
+
+[BMISSOService.csproj]
+SCC_Aux_Path = "\\192.168.53.20\vssdb"
+SCC_Project_Name = "$/BMISSO.root/BMISSO/BMISSO/BMISSOService", SVFDAAAA

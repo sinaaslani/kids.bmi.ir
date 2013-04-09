@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A7DB1C51-C991-4039-AC9B-042A3C23345D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kids.EntitiesModel</RootNamespace>
+    <AssemblyName>Kids.EntitiesModel</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;DATAPROVIDER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;DATAPROVIDER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BankStoryExam.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankStoryExam_Question.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankStory_DataProvider.cs" />
+    <Compile Include="BaseDataProvider.cs" />
+    <Compile Include="BMICustomer_DataProvider.cs" />
+    <Compile Include="BMIKids_Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMIKids_Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="BMIKids_SelfTrack.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMIKids_SelfTrack.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BMIKids_SelfTrack.Context.Extensions.cs">
+      <DependentUpon>BMIKids_SelfTrack.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BMIKids_SelfTrack.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Festival.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Festival_DataProvider.cs" />
+    <Compile Include="DynamicPage.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DynamicPageType.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FAQCategory.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Festival_Pictures.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Festival_Pictures_Poll.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Game.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GeustKidsUser.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GreetingCard.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KidsUser.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KidsUserState.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KidsUsers_Payments.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="KidsUser_BankStoryExam.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kids_Greetings.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kids_Scores.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Kids_Wishes.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="News.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="NewsCategory.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ParentRelation.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PollQuestion.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PollResponseItem.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PollUserResponse.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostalCard.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PostalCard_DataProvider.cs" />
+    <Compile Include="FAQ_DataProvider.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="QuestionnaireForm.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionnaireForms_ResponseItems.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionnaireForm_Questions.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionnaireForm_UserResponses.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Scores\ScoreHelper.cs" />
+    <Compile Include="ScoreType.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ScoreTypeCategory.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemRole.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SystemUser.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Wish.cs">
+      <DependentUpon>BMIKids_SelfTrack.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Wish_DataProvider.cs" />
+    <Compile Include="QuestionnaireForm_DataProvider.cs" />
+    <Compile Include="Poll_DataProvider.cs" />
+    <Compile Include="Scores\Score_DataProvider.cs" />
+    <Compile Include="Game_DataProvider.cs" />
+    <Compile Include="KidsUser_DataProvider.cs" />
+    <Compile Include="DynamicPages_DataProvider.cs" />
+    <Compile Include="News_DataProvider.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemUser_DataProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="BMIKids_Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>BMIKids_Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="BMIKids_SelfTrack.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BMIKids_SelfTrack.Context.cs</LastGenOutput>
+    </None>
+    <None Include="BMIKids_SelfTrack.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>BMIKids_SelfTrack.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Configs\Kids.Common.csproj">
+      <Project>{3A44DE10-8961-403F-9F7A-558AF8A15142}</Project>
+      <Name>Kids.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kids.LoggingHelper\Kids.LoggingHelper.csproj">
+      <Project>{A6DF15FA-0799-4805-99C8-A7C4C8CD958E}</Project>
+      <Name>Kids.LoggingHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Kids.Utility\Kids.Utility.csproj">
+      <Project>{0B3C4F1C-DFEC-4F66-BA81-61B8C22022B5}</Project>
+      <Name>Kids.Utility</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
